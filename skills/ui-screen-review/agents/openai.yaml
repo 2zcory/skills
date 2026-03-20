@@ -1,4 +1,0 @@
-interface:
-  display_name: "UI Screen Review"
-  short_description: "Create and maintain canonical UI review artifacts"
-  default_prompt: "Use $ui-screen-review to classify this UI change, update the canonical review artifacts in the project -ctx repo, and prepare a concise review brief before implementation."

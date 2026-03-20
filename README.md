@@ -14,5 +14,5 @@ Public Codex skills and reusable agent workflows.
 
 ## Structure
 
-- `skills/<skill-name>/SKILL.md`: skill instructions
-- `skills/<skill-name>/agents/openai.yaml`: optional UI metadata for the skill
+- `<skill-name>/SKILL.md`: skill instructions
+- `<skill-name>/agents/openai.yaml`: optional UI metadata for the skill

@@ -16,3 +16,21 @@ Public Codex skills and reusable agent workflows.
 
 - `<skill-name>/SKILL.md`: skill instructions
 - `<skill-name>/agents/openai.yaml`: optional UI metadata for the skill
+- `scripts/reconcile_runtime_skills.py`: host-local helper that reconciles authored skills at the repo root against the effective runtime path behind `~/.codex/skills`
+
+## Host-Local Runtime Sync
+
+For this single-user setup, runtime discovery stays behind `~/.codex/skills`, while this repo is the authored source.
+
+Use:
+
+```bash
+python3 scripts/reconcile_runtime_skills.py
+```
+
+The script:
+
+- treats any direct child directory containing `SKILL.md` as an authored skill
+- resolves the effective runtime path behind `~/.codex/skills`
+- creates or refreshes symlinks for those authored skills
+- avoids silently overwriting non-symlink runtime installs unless `--force` is used

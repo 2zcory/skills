@@ -1,4 +1,4 @@
 interface:
   display_name: "UI Screen Review"
-  short_description: "Create and maintain canonical UI review artifacts"
-  default_prompt: "Use $ui-screen-review to classify this UI change, update the canonical review artifacts in the project -ctx repo, and prepare a concise review brief before implementation."
+  short_description: "Create canonical UI review artifacts with an explicit review mode"
+  default_prompt: "Use $ui-screen-review to classify this UI change, declare the primary review mode, update the canonical review artifacts and launcher in the project -ctx repo, and prepare a concise review brief before implementation."

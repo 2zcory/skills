@@ -11,6 +11,8 @@ Public Codex skills and reusable agent workflows.
 ## Current Skills
 
 - `ui-screen-review`: classify screen-level UI changes, maintain canonical review artifacts, and stop at the design-approval gate
+- `product-ba`: clarify business problems, gather requirements, frame stakeholders and domain context, and write structured specs before implementation
+- `dialectical-review`: expose contradictions, compare competing positions or hypotheses, and synthesize a stronger direction with explicit residual risk
 
 ## Structure
 

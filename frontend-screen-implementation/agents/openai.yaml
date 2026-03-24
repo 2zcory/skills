@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Screen Implementation"
+  short_description: "Implement one screen slice with full UI states and fit"
+  default_prompt: "Use $frontend-screen-implementation to implement this approved screen or flow slice with clear ownership, loading or empty or error states, responsive behavior, and explicit follow-up risks."

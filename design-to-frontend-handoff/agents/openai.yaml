@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design to Frontend Handoff"
+  short_description: "Turn approved UI artifacts into implementation-ready handoff"
+  default_prompt: "Use $design-to-frontend-handoff to turn this approved screen or flow artifact into explicit frontend handoff covering scope, states, responsive constraints, dependencies, and unresolved implementation questions."

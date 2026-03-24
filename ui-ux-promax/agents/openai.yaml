@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI UX Pro Max"
+  short_description: "Push UI toward disciplined premium visuals and purposeful motion"
+  default_prompt: "Use $ui-ux-promax to strengthen this UI direction with sharper hierarchy, clearer hero-versus-support surfaces, calmer support density, and more purposeful motion without sacrificing product clarity or scan speed."

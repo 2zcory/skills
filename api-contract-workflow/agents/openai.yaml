@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Contract Workflow"
+  short_description: "Clarify frontend-backend contracts before integration drifts"
+  default_prompt: "Use $api-contract-workflow to turn this frontend-backend interface into an explicit contract covering payloads, errors, pagination, auth expectations, client-state implications, and open questions."

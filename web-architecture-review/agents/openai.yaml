@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Architecture Review"
+  short_description: "Review web-app architecture choices before implementation locks in"
+  default_prompt: "Use $web-architecture-review to compare the key web-app architecture options for this project, recommend the strongest practical direction, and note the tradeoffs and next verification step."

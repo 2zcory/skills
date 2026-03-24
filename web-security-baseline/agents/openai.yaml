@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Security Baseline"
+  short_description: "Review core web-app risk surfaces before build or release"
+  default_prompt: "Use $web-security-baseline to review this web-app change for auth, session, permission, input, upload, secret, and abuse-risk gaps, then produce a practical security baseline and follow-up checks."

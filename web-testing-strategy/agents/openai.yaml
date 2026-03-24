@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Testing Strategy"
+  short_description: "Plan proportional web-app verification across test layers"
+  default_prompt: "Use $web-testing-strategy to map this web-app change to a pragmatic mix of unit, integration, end-to-end, smoke, and manual verification, then explain the tradeoffs."

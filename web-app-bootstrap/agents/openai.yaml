@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web App Bootstrap"
+  short_description: "Bootstrap private web-app context repos from shared templates"
+  default_prompt: "Use $web-app-bootstrap to set up or refresh a private web-app -ctx repository from the shared Context OS template and starter kit, create the first story, and keep the bootstrap thin."

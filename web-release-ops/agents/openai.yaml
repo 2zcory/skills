@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Release Ops"
+  short_description: "Prepare web-app releases, smoke checks, and rollback workflow"
+  default_prompt: "Use $web-release-ops to turn this web-app release into a concrete readiness plan with pre-deploy checks, deploy order, smoke verification, rollback conditions, and post-release follow-up."

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meridian Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="label">Revenue operations platform</p>
+          <h1>Choose the plan that matches the maturity of your team, not just seat count.</h1>
+          <p class="lede">
+            Meridian is built for companies moving from spreadsheet-based forecasting to disciplined revenue control.
+            The page uses a comparison-first layout so buyers can understand tradeoffs without drowning in equal-weight cards.
+          </p>
+        </div>
+        <div class="hero-note">
+          <p class="label">Layout logic</p>
+          <p>Primary job: compare. Archetype: split decision with one featured recommendation and one support comparison table.</p>
+        </div>
+      </section>
+
+      <section class="pricing-grid" aria-label="Pricing plans">
+        <article class="tier tier-featured">
+          <p class="tier-tag">Recommended</p>
+          <h2>Growth Control</h2>
+          <p class="price">$960<span>/mo</span></p>
+          <p class="tier-text">For teams that need repeatable forecasting, accountable pipeline reviews, and one operating rhythm.</p>
+          <a class="button button-primary" href="#">Start pilot</a>
+          <ul>
+            <li>Forecast board with scenario views</li>
+            <li>Weekly review cadence and owner notes</li>
+            <li>Revenue-risk summaries for leadership</li>
+          </ul>
+        </article>
+
+        <article class="tier">
+          <p class="tier-tag">Earlier stage</p>
+          <h2>Foundation</h2>
+          <p class="price">$390<span>/mo</span></p>
+          <p class="tier-text">For smaller teams replacing disconnected spreadsheets and simple CRM exports.</p>
+          <a class="button button-secondary" href="#">View details</a>
+          <ul>
+            <li>Pipeline snapshots</li>
+            <li>Basic forecast rollups</li>
+            <li>Team activity summary</li>
+          </ul>
+        </article>
+
+        <article class="tier">
+          <p class="tier-tag">Custom</p>
+          <h2>Enterprise Signal</h2>
+          <p class="price">Talk to us</p>
+          <p class="tier-text">For multi-region teams that need governance, planning layers, and approval workflows.</p>
+          <a class="button button-secondary" href="#">Book review</a>
+          <ul>
+            <li>Permission and approval layers</li>
+            <li>Cross-region planning support</li>
+            <li>Executive operating summaries</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="comparison-panel">
+        <div class="comparison-head">
+          <div>
+            <p class="label">Decision support</p>
+            <h2>What actually changes between plans</h2>
+          </div>
+          <p class="comparison-copy">The support table stays quiet so the featured plan remains the hero while comparison detail stays available.</p>
+        </div>
+
+        <div class="comparison-table" role="table" aria-label="Plan comparison">
+          <div class="table-row table-head" role="row">
+            <span role="columnheader">Capability</span>
+            <span role="columnheader">Foundation</span>
+            <span role="columnheader">Growth Control</span>
+            <span role="columnheader">Enterprise Signal</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell">Scenario planning</span>
+            <span role="cell">-</span>
+            <span role="cell">Included</span>
+            <span role="cell">Advanced</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell">Operating cadence</span>
+            <span role="cell">Basic</span>
+            <span role="cell">Guided</span>
+            <span role="cell">Custom</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell">Approval workflows</span>
+            <span role="cell">-</span>
+            <span role="cell">-</span>
+            <span role="cell">Included</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

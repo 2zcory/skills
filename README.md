@@ -12,6 +12,7 @@ Public Codex skills and reusable agent workflows.
 
 - `ui-screen-review`: classify screen-level UI changes, maintain canonical review artifacts, and stop at the design-approval gate
 - `ui-ux-promax`: push a UI direction toward disciplined premium visuals, stronger hierarchy, and purposeful motion without turning it into noisy dashboard-like design
+- `html-ui-art-director`: produce stronger HTML-first UI artifacts with explicit visual language, layout archetype, icon and asset strategy, and critique against generic rounded-card output
 - `product-ba`: clarify business problems, gather requirements, frame stakeholders and domain context, and write structured specs before implementation
 - `dialectical-review`: expose contradictions, compare competing positions or hypotheses, and synthesize a stronger direction with explicit residual risk
 - `web-app-bootstrap`: bootstrap or refresh a private web-app `-ctx` repository from the shared Context OS template and starter kit, create the first story, and activate only the context surfaces the project currently needs

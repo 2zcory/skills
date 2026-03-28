@@ -10,9 +10,9 @@ Public Codex skills and reusable agent workflows.
 
 ## Current Skills
 
-- `ui-screen-review`: classify screen-level UI changes, maintain canonical review artifacts, and stop at the design-approval gate
-- `ui-ux-promax`: push a UI direction toward disciplined premium visuals, stronger hierarchy, and purposeful motion without turning it into noisy dashboard-like design
-- `html-ui-art-director`: produce stronger HTML-first UI artifacts with explicit visual language, layout archetype, icon and asset strategy, and critique against generic rounded-card output
+- `ui-screen-review`: create or update durable screen-review artifacts in a project `-ctx` repo and stop at the design-approval gate
+- `html-ui-art-director`: generate HTML-first design artifacts with explicit art direction, layout choice, asset strategy, and critique scoring
+- `ui-ux-promax`: refine an existing direction toward a stronger premium result through composition, hierarchy, motion, execution quality, and UI-library judgment
 - `product-ba`: clarify business problems, gather requirements, frame stakeholders and domain context, and write structured specs before implementation
 - `dialectical-review`: expose contradictions, compare competing positions or hypotheses, and synthesize a stronger direction with explicit residual risk
 - `web-app-bootstrap`: bootstrap or refresh a private web-app `-ctx` repository from the shared Context OS template and starter kit, create the first story, and activate only the context surfaces the project currently needs
@@ -23,6 +23,16 @@ Public Codex skills and reusable agent workflows.
 - `api-contract-workflow`: turn frontend-backend boundaries into explicit contracts covering payloads, errors, pagination, auth expectations, and client-state implications
 - `design-to-frontend-handoff`: turn approved screen or flow artifacts into implementation-ready frontend handoff covering states, constraints, scope, and dependencies
 - `frontend-screen-implementation`: implement one approved screen or flow slice with explicit user-facing states, interaction ownership, and responsive behavior
+
+## Design Pipeline
+
+For design-heavy work, the normal routing order is:
+
+1. `ui-screen-review` for durable review workflow in the project `-ctx` repo
+2. `html-ui-art-director` for stronger HTML/CSS artifact direction and layout choice
+3. `ui-ux-promax` when the direction exists but still needs premium refinement
+4. `design-to-frontend-handoff` after approval
+5. `frontend-screen-implementation` during coding
 
 ## Structure
 

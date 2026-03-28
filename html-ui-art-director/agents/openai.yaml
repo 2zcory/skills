@@ -1,4 +1,4 @@
 interface:
   display_name: "HTML UI Art Director"
-  short_description: "Create stronger HTML-first UI artifacts with real art direction"
-  default_prompt: "Use $html-ui-art-director to turn this UI request into a reviewable HTML/CSS design artifact with a distinct visual language, a deliberate layout archetype, explicit icon and asset strategy, and a critique pass against generic rounded-card output."
+  short_description: "Generate HTML-first UI artifacts with explicit layout and art direction"
+  default_prompt: "Use $html-ui-art-director to turn this UI request into a reviewable HTML/CSS artifact with a distinct visual language, a defensible layout archetype, explicit asset strategy, and a critique pass against generic rounded-card output."

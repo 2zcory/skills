@@ -1,4 +1,4 @@
 interface:
   display_name: "Product BA"
-  short_description: "Clarify unclear business scope before design or implementation"
-  default_prompt: "Use $product-ba to clarify the business problem, missing requirements, stakeholders, and scope, then turn this request into lightweight BA output and note any Context OS handoff needed before implementation."
+  short_description: "Clarify business problems, workflow gaps, and requirements before implementation"
+  default_prompt: "Use $product-ba to clarify the business problem, workflow, stakeholders, business rules, and scope, choose the lightest fitting BA output mode, and note any Context OS handoff needed before implementation."

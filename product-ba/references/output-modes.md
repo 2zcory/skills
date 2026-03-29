@@ -74,3 +74,12 @@ Output shape:
 - Prefer `requirement-note` for a bounded feature or workflow slice.
 - Prefer `user-story-pack` when the team is preparing design or engineering handoff.
 - Prefer `mini-BRD` when decisions cross teams, roles, or workflow stages.
+
+## Output quality bar
+
+For every mode:
+
+- separate confirmed facts from assumptions
+- keep requirements observable and testable
+- record unresolved questions explicitly
+- avoid implementation detail unless it is already a real constraint

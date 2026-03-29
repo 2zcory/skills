@@ -33,6 +33,15 @@ Make explicit:
 - constraints from policy, timing, or operations
 - what is intentionally out of scope
 
+## Request vs Need Check
+
+Ask:
+
+- what the user is asking to build or change
+- what business problem that request is trying to solve
+- whether the request is a requirement or only a proposed solution
+- what would happen if the request is delivered but the problem remains
+
 ## Non-Functional Concerns
 
 Prompt only when relevant:
@@ -62,6 +71,16 @@ When handoff quality matters, map:
 - requirement -> dependency or risk
 
 Keep this lightweight. The point is to expose logic, not to create ceremony.
+
+## Handoff Readiness Check
+
+Verify:
+
+- the problem can be stated in one or two concrete sentences
+- scope boundaries are visible
+- key assumptions are explicit
+- unresolved questions are named
+- the next role can act without inventing hidden policy
 
 ## Contradiction Trigger
 

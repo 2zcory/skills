@@ -25,6 +25,34 @@ Do not jump straight into features, screens, architecture, or code if the busine
 
 Prefer the lightest artifact that reduces ambiguity enough for the next decision.
 
+## Fast triage
+
+Before choosing interview mode or output mode, check these three gates:
+
+- is the business outcome clear
+- are the primary actors and affected workflow clear
+- is there a usable success signal or acceptance direction
+
+Routing:
+
+- if all three are clear, skip discovery-heavy questioning and produce the lightest fitting artifact
+- if one or two are unclear, use `direct-clarification` and surface the gaps explicitly
+- if the core problem frame is still fuzzy, use `interview-mode`
+
+Do not ask more questions when the remaining uncertainty can be recorded safely as open questions.
+
+## Separate request from need
+
+Early in the interaction, separate:
+
+- stated request
+- underlying business problem
+- why this matters now
+- who is affected
+- what success would look like
+
+If the user starts from a solution idea, do not reject it, but restate it as a proposal until the business need is clear.
+
 ## Choose the interaction mode
 
 Pick the interaction style before writing:
@@ -46,6 +74,20 @@ Pick one mode before writing:
 - `mini-BRD` when multiple stakeholders, workflow changes, or delivery risk justify a more decision-friendly summary.
 
 For mode-specific structures and prompts, read [`references/output-modes.md`](references/output-modes.md).
+For concise output templates, read [`references/templates.md`](references/templates.md).
+For worked examples of good BA outputs, read [`references/examples.md`](references/examples.md).
+
+## Risk escalation triggers
+
+Increase rigor when the work affects:
+
+- money movement or pricing
+- permissions or irreversible actions
+- audit trails or compliance
+- privacy, sensitive data, or approval chains
+- customer-facing failure states with business impact
+
+In these cases, make business rules, exceptions, approval paths, and failure handling explicit before handoff.
 
 ## Workflow
 
@@ -54,33 +96,52 @@ For mode-specific structures and prompts, read [`references/output-modes.md`](re
    - who needs it
    - why it matters now
    - what constraint, risk, or decision pressure is already visible
-2. Identify the minimum context needed to proceed safely:
+2. Separate the stated request from the underlying business need and record any solution ideas as proposals, not requirements.
+3. Identify the minimum context needed to proceed safely:
    - stakeholders and decision owners
    - users or actor types
    - current workflow, pain points, and target-state change
    - business rules, constraints, and non-goals
    - success measures, dependencies, and timing pressure
-3. Separate:
+4. Separate:
    - confirmed facts
    - working assumptions
    - open questions
    - implementation ideas that are not yet requirements
-4. If ambiguity is still material, switch to `interview-mode` and ask the smallest useful batch of high-value questions.
-5. Make invisible scope visible:
+5. If ambiguity is still material, switch to `interview-mode` and ask the smallest useful batch of high-value questions.
+6. Make invisible scope visible:
    - in-scope and out-of-scope items
    - priorities or sequencing when they affect decisions
    - non-functional concerns when they matter, such as auditability, latency, reliability, privacy, or security
-6. After each interview round or clarification pass, summarize:
+7. After each interview round or clarification pass, summarize:
    - what is known
    - what is assumed
    - what is still unknown
    - what the next decision depends on
-7. Stop asking questions once the next artifact can be produced safely enough to move forward.
-8. Convert the clarified problem into the lightest fitting artifact.
-9. Highlight unresolved risks, dependencies, and scope boundaries before handoff to design or engineering.
-10. Only after the problem is clear, move into solution options, implementation slices, or handoff material.
+8. Stop asking questions once the next artifact can be produced safely enough to move forward.
+9. Check whether the problem is clear enough for the next handoff; if not, capture the gap explicitly before producing the artifact.
+10. Convert the clarified problem into the lightest fitting artifact.
+11. Highlight unresolved risks, dependencies, and scope boundaries before handoff to design or engineering.
+12. Only after the problem is clear, move into solution options, implementation slices, or handoff material.
 
 For deeper prompting on stakeholder mapping, AS-IS/TO-BE workflow, NFRs, prioritization, and traceability, read [`references/analysis-checklists.md`](references/analysis-checklists.md).
+
+## Handoff readiness
+
+The BA pass is ready to hand off when:
+
+- the business problem is stated clearly enough to guide decisions
+- scope boundaries are visible
+- assumptions and open questions are named explicitly
+- the chosen artifact is detailed enough for the next role
+
+Readiness by handoff target:
+
+- for design: actors, workflow, constraints, and edge cases are clear enough to shape screens or flows
+- for engineering: stories or requirements are testable enough to implement without hidden policy decisions
+- for strategy or stakeholder review: risks, dependencies, and open decisions are visible enough for alignment
+
+If those conditions are not met, stop and record the gap rather than pretending the handoff is ready.
 
 ## Expected output shape
 

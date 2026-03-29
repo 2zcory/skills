@@ -1,4 +1,4 @@
 interface:
   display_name: "Product BA"
-  short_description: "Clarify business problems and run focused BA interviews before implementation"
-  default_prompt: "Use $product-ba to clarify the business problem, workflow, stakeholders, business rules, and scope, switch into interview mode when guided elicitation is the best next step, choose the lightest fitting BA output mode, and note any Context OS handoff needed before implementation."
+  short_description: "Clarify business problems, scope, workflow, and requirements before design or implementation"
+  default_prompt: "Use $product-ba to separate the stated request from the underlying business need, clarify actors, workflow, business rules, scope, and success signals, ask only the smallest useful set of high-value questions when needed, choose the lightest fitting BA artifact, and stop once the output is safe enough for handoff."

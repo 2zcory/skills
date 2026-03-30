@@ -62,7 +62,25 @@ Pick the interaction style before writing:
 
 Use `interview-mode` when the user would benefit from consultation rather than a one-shot requirement summary.
 
+Use these stricter mode gates:
+
+- stay in `direct-clarification` when the business outcome is mostly clear and the remaining gaps can be carried as explicit open questions without changing the next likely implementation or design direction
+- switch to `interview-mode` only when at least one unresolved gap would materially change scope, actor behavior, business rules, approval flow, or success measurement
+- do not switch to `interview-mode` just because the request could be made more polished or more complete
+
 For interview sequencing, round summaries, and stop conditions, read [`references/interview-mode.md`](references/interview-mode.md).
+
+## Interview stop rule
+
+`interview-mode` is a short ambiguity-reduction tool, not a standing operating mode.
+
+Stop the interview loop and produce the artifact when any of these becomes true:
+
+- the next role could proceed safely with explicit assumptions and open questions
+- another question round would mostly improve polish rather than reduce delivery risk
+- the missing information belongs to a different owner and should be recorded as a dependency instead of extracted now
+
+If two rounds of questions still do not reduce a material ambiguity, stop and surface the blocked decision explicitly instead of continuing discovery by inertia.
 
 ## Choose the output mode
 
@@ -72,6 +90,15 @@ Pick one mode before writing:
 - `requirement-note` when scope, business rules, priorities, or dependencies need explicit structure.
 - `user-story-pack` when engineering or design needs testable stories plus acceptance criteria.
 - `mini-BRD` when multiple stakeholders, workflow changes, or delivery risk justify a more decision-friendly summary.
+
+Choose the lightest mode that still preserves the decision:
+
+- default to `quick-clarification` unless the task clearly needs a more structured artifact
+- use `requirement-note` when the main risk is hidden scope, rules, or dependency ambiguity
+- use `user-story-pack` only when the work is close enough to implementation that story slicing and acceptance criteria are actionable now
+- use `mini-BRD` only when stakeholder alignment, workflow change, or business risk would make lighter artifacts too lossy
+
+Do not merge multiple output modes into one oversized hybrid document unless the user explicitly asks for that combination.
 
 For mode-specific structures and prompts, read [`references/output-modes.md`](references/output-modes.md).
 For concise output templates, read [`references/templates.md`](references/templates.md).
@@ -88,6 +115,26 @@ Increase rigor when the work affects:
 - customer-facing failure states with business impact
 
 In these cases, make business rules, exceptions, approval paths, and failure handling explicit before handoff.
+
+Also make the following explicit when relevant:
+
+- source of truth or system of record
+- actor authority and approval ownership
+- irreversible state changes and recovery expectations
+- audit event expectations and dispute handling path
+- operational or compliance dependencies that could block release or sign-off
+
+## Evidence rule
+
+Do not let clean BA prose hide weak evidence.
+
+When the confidence level matters, distinguish:
+
+- confirmed by the user or an authoritative artifact
+- inferred from context but not yet confirmed
+- unknown and decision-blocking
+
+If a key requirement, actor rule, or success signal is inferred rather than confirmed, label it as a working assumption and test whether proceeding on that assumption is actually safe.
 
 ## Workflow
 
@@ -108,6 +155,7 @@ In these cases, make business rules, exceptions, approval paths, and failure han
    - working assumptions
    - open questions
    - implementation ideas that are not yet requirements
+   - blocked decisions that belong to another owner
 5. If ambiguity is still material, switch to `interview-mode` and ask the smallest useful batch of high-value questions.
 6. Make invisible scope visible:
    - in-scope and out-of-scope items
@@ -190,6 +238,12 @@ Prefer concise, decision-friendly outputs such as:
 - If the task already has an approved problem frame and now needs execution planning, hand off to the project-local planning workflow instead of re-running BA discovery.
 - In interview mode, stop and convert to an artifact when another question round would mostly repeat or polish rather than reduce real delivery risk.
 
+Treat these as hard routing guards:
+
+- if the main problem is choosing between materially competing directions, route to `dialectical-review` instead of stretching BA discovery into decision arbitration
+- if the business frame is already approved and the remaining work is slicing, sequencing, or delivery coordination, do not keep using this skill as a planning surrogate
+- if the next useful output is mainly screen direction, frontend handoff, or implementation behavior, hand off to the appropriate downstream skill instead of expanding the BA artifact
+
 ## Boundaries
 
 - Do not invent domain facts that have not been confirmed.
@@ -199,3 +253,4 @@ Prefer concise, decision-friendly outputs such as:
 - Do not force heavyweight BRD behavior onto a small task that only needs a crisp aligned note.
 - Do not turn interview mode into an endless questionnaire or faux-workshop.
 - Do not replace project-local workflow or trusted project context; use this skill as an execution aid, not the source of truth.
+- Do not let this skill become the default home for contradiction resolution, delivery planning, or design execution once the BA decision boundary has already been crossed.

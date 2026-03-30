@@ -1,4 +1,4 @@
 interface:
   display_name: "Dialectical Review"
   short_description: "Resolve real contradictions and synthesize stronger directions"
-  default_prompt: "Use $dialectical-review to identify the real contradiction in this task, compare the strongest competing positions or hypotheses, produce a practical synthesis, and note any Context OS handoff needed for durable decisions."
+  default_prompt: "Use $dialectical-review to identify the real contradiction in this task, choose the right review mode, compare the strongest competing positions or hypotheses fairly, state the bottom line plainly, produce a practical synthesis, and note any Context OS handoff needed for durable decisions."

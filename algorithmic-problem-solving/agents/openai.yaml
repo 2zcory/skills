@@ -1,0 +1,4 @@
+interface:
+  display_name: "Algorithmic Problem Solving"
+  short_description: "Solve algorithm and data-structure problems rigorously"
+  default_prompt: "Use $algorithmic-problem-solving to solve this algorithm or data-structure problem with a baseline approach, optimized solution, complexity analysis, correctness reasoning, and implementation notes."

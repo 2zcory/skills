@@ -24,6 +24,7 @@ Public Codex skills and reusable agent workflows.
 - `design-to-frontend-handoff`: turn approved screen or flow artifacts into implementation-ready frontend handoff covering states, constraints, scope, and dependencies
 - `frontend-screen-implementation`: implement one approved screen or flow slice with explicit user-facing states, interaction ownership, and responsive behavior
 - `frontend-execution-standards`: apply modern React or Next.js frontend implementation standards covering rendering boundaries, component design, state discipline, semantics, accessibility, responsive behavior, and current stable-version bias
+- `algorithmic-problem-solving`: solve algorithm and data-structure tasks with paradigm selection, data-structure choice, complexity analysis, correctness reasoning, and implementation guidance
 
 ## Design Pipeline
 

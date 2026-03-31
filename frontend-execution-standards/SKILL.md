@@ -79,6 +79,25 @@ Produce frontend code that is current, maintainable, and disciplined:
    - current stable dependency choice
    - explicit tradeoffs and residual risks
 
+## Responsive Verification Gate
+
+For user-facing frontend work, do not mark `responsive` behavior complete from CSS reasoning, breakpoint inspection, or build success alone.
+
+Before claiming the responsive pass is done, require at least one narrow-screen verification signal such as:
+
+- browser device-mode review
+- emulator review
+- screenshot evidence
+- user confirmation on a real device
+
+When the slice affects a screen, route, header, hero, or primary CTA, explicitly check:
+
+- header and navigation compression on narrow screens
+- above-the-fold orientation
+- hero or title scaling
+- CTA visibility and action access
+- overflow or pathological wrapping
+
 ## Pattern Selection Rule
 
 Prefer no named pattern by default.
@@ -105,6 +124,7 @@ If that pressure is real, load `references/pattern-selection.md` and choose the 
 - Use `useMemo`, `useCallback`, and custom hooks only when there is a concrete benefit.
 - Avoid decorative motion without a state or orientation job.
 - Prefer the lightest named pattern that resolves the actual problem; do not add patterns for status signaling or résumé theater.
+- Do not treat `npm run build`, CSS edits, or inferred breakpoint logic as sufficient evidence that a user-facing responsive pass is complete.
 
 ## Pairing Guidance
 
@@ -121,6 +141,7 @@ When this skill runs successfully, leave behind:
 - any named pattern chosen and why it was justified
 - the handled user-facing states
 - any explicit a11y or responsive considerations
+- the responsive verification signal used when responsive completion is claimed
 - the version or dependency assumptions that mattered
 - residual risks or deliberate deferrals
 

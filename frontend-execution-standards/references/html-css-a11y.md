@@ -27,6 +27,14 @@ Load this reference when semantic structure, responsive behavior, accessibility,
   - readable spacing and line lengths
 - Avoid desktop-only assumptions in component spacing or fixed widths.
 - Prefer fluid layouts with clear max-widths over brittle breakpoint-heavy hacks.
+- Treat responsive work as evidence-based for user-facing screens:
+  - do not close it from CSS inspection or build success alone
+  - verify at least one real narrow-screen view before claiming completion
+- When the screen has a strong above-the-fold job, explicitly check:
+  - header and navigation compression
+  - hero or title scale
+  - CTA visibility
+  - pathological vertical waste
 
 ## CSS Discipline
 

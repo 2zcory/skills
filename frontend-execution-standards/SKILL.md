@@ -7,6 +7,8 @@ description: "Use when frontend code work needs modern implementation standards 
 
 Use this skill when the frontend task is already implementation-facing and the main need is execution quality, not product definition or visual exploration.
 
+Do not use this skill as the only active skill for shared public chrome or other `system surface` work before a design boundary is approved.
+
 Keep this file focused on operating rules. Load only the references needed for the active stack or risk:
 
 - `references/react-nextjs.md` for React and Next.js rendering, server and client boundaries, data loading, and framework-specific execution choices
@@ -24,6 +26,7 @@ Keep this file focused on operating rules. Load only the references needed for t
 - A task needs stronger defaults around semantic HTML, accessibility, responsiveness, or rendering discipline.
 
 Do not use this skill for product requirements clarification, screen-review workflow, pure art direction, or broad architecture decisions that should route to a different skill.
+Do not use it as the entry point for shared headers, nav shells, or combined brand plus locale plus theme surfaces that still need hierarchy review.
 
 ## Goal
 
@@ -57,22 +60,29 @@ Produce frontend code that is current, maintainable, and disciplined:
    - responsive execution
    - performance cleanup
    - pattern selection
-4. Make the ownership boundary explicit:
+4. Check whether the slice is actually a `system surface`:
+   - does it own brand presentation
+   - primary navigation
+   - locale controls
+   - theme controls
+   - cross-route responsive compression
+   - if it owns two or more of those, stop and route through `ui-screen-review` or an approved system-surface contract before code-first implementation
+5. Make the ownership boundary explicit:
    - what belongs in the page or route
    - what belongs in child components
    - what belongs in shared UI
    - what should stay outside the current slice
-5. Plan all relevant user-facing states:
+6. Plan all relevant user-facing states:
    - loading
    - empty
    - success
    - error
    - disabled or blocked
-6. Prefer the lightest implementation that preserves clarity:
+7. Prefer the lightest implementation that preserves clarity:
    - do not introduce abstraction before reuse pressure is real
    - do not push everything into hooks or helpers without boundary value
    - do not make components client-side unless there is an actual client-only need
-7. Check output against the standard:
+8. Check output against the standard:
    - semantic HTML
    - accessible names and hierarchy
    - narrow-screen behavior
@@ -125,10 +135,12 @@ If that pressure is real, load `references/pattern-selection.md` and choose the 
 - Avoid decorative motion without a state or orientation job.
 - Prefer the lightest named pattern that resolves the actual problem; do not add patterns for status signaling or résumé theater.
 - Do not treat `npm run build`, CSS edits, or inferred breakpoint logic as sufficient evidence that a user-facing responsive pass is complete.
+- If the slice owns two or more of brand, primary nav, locale, theme, or cross-route responsive compression, do not proceed code-first without a reviewed system-surface artifact or approved contract.
 
 ## Pairing Guidance
 
 - Pair with `frontend-screen-implementation` when the task is one approved screen or flow slice and both workflow structure and code standards matter.
+- Pair with `ui-screen-review` first when the work touches shared public chrome or another `system surface`.
 - Pair with `ui-ux-promax` when the implementation is correct but the visual execution still feels generic or weak.
 - Pair with `web-architecture-review` when the real question is rendering or repository architecture rather than code-level implementation quality.
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Editorial Voice Shaping"
+  short_description: "Rewrite route copy to reduce AI-like stiffness while preserving authored voice and route fit"
+  default_prompt: "Use $editorial-voice-shaping to diagnose route-job mismatch, identify the main copy pathologies, rewrite the public-facing copy with clearer route fit, and end with a brief rationale plus residual risks."

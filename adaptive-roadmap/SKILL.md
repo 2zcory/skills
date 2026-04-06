@@ -58,6 +58,7 @@ Do not stay mode-agnostic if naming the mode will sharpen the output.
 
 Read [output-contract.md](references/output-contract.md) when the output needs a stronger contract.
 Read [examples.md](references/examples.md) when the roadmap shape is ambiguous or the project has multiple active streams.
+Read [test-prompts.md](references/test-prompts.md) when validating trigger quality or forward-testing the skill on realistic request phrasing.
 
 ## Creation Guidance
 

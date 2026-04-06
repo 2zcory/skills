@@ -7,6 +7,7 @@ Use the lightest output shape that still makes the roadmap decision-ready.
 Produce a roadmap with these blocks when they materially matter:
 
 - `Current phase`
+  If the project is not honestly in one phase, use `Active workstreams` instead.
 - `Desired outcomes`
 - `Anti-goals`
 - `Known facts`
@@ -33,6 +34,7 @@ For each roadmap slice, prefer a compact structure such as:
 - `Stop/defer notes`
 
 Do not force every section when the task is small. Keep enough structure to prevent false certainty.
+If the project has multiple streams with different maturity levels, group slices under those streams instead of flattening them into one linear phase list.
 
 ## Review Mode
 
@@ -45,6 +47,7 @@ Prefer a compact review output with:
 - `What should be tightened, deferred, or removed`
 - `Missing evidence loops`
 - `Missing or weak replan triggers`
+- `Execution reality gaps`
 - `Bottom line`
 - `Next correction`
 

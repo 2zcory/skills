@@ -12,6 +12,8 @@ Route or hand off when the main blocker is:
 - `web-release-ops`: deployment, migration, smoke checks, rollback, or environment readiness drives the next decision
 - `web-security-baseline`: auth, session, permissions, secrets, abuse, upload, or auditability risks would change the roadmap
 
+For non-web projects, keep the same routing logic even when the exact specialist skill is not available in this repo: hand off to the domain-specific architecture, verification, release, security, or contract workflow that actually governs the next decision.
+
 Do not keep expanding the roadmap when the real need is one of those deeper specialist passes.
 
 ## Good Triggers For This Skill

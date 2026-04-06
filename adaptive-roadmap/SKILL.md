@@ -1,6 +1,6 @@
 ---
 name: adaptive-roadmap
-description: Create and review project roadmaps as living execution artifacts that can adapt to changing evidence, risks, and delivery phases. Use when Codex needs to build a phased plan, evolution plan, sequencing plan, or roadmap review that must make current phase, desired outcomes, anti-goals, working assumptions, decision boundaries, invalidation checks, replan triggers, and what not to build yet explicit. Use this when choosing the wrong sequence or staying on the wrong roadmap would materially affect implementation or review decisions.
+description: Create and review project roadmaps as living execution artifacts that can adapt to changing evidence, risks, and delivery phases. Use when Codex needs to build a phased plan, evolution plan, sequencing plan, or roadmap review that must make current phase or active workstreams, desired outcomes, anti-goals, working assumptions, decision boundaries, invalidation checks, replan triggers, and what not to build yet explicit. Use this when choosing the wrong sequence or staying on the wrong roadmap would materially affect implementation or review decisions, especially for product and software delivery work that may need handoff to specialist skills.
 ---
 
 # Adaptive Roadmap
@@ -38,7 +38,7 @@ Do not stay mode-agnostic if naming the mode will sharpen the output.
 ## Core Workflow
 
 1. State the roadmap question that actually matters.
-2. Name the current project phase as best as the evidence supports.
+2. Name the current project phase as best as the evidence supports, or split the roadmap into active workstreams when different parts of the project are clearly in different phases.
 3. Separate `known facts`, `assumptions`, `constraints`, and `unknowns`.
 4. Make `desired outcomes` and `anti-goals` explicit before sequencing work.
 5. Break the roadmap into slices or phases only as far as current evidence supports.
@@ -61,6 +61,7 @@ Read [output-contract.md](references/output-contract.md) when the output needs a
 When creating a roadmap:
 
 - anchor the roadmap to the current phase, not the imagined end state
+- if the project has materially different streams in different phases, split the roadmap by stream instead of forcing one fake shared phase
 - prefer fewer slices with stronger boundaries over long fake precision
 - make the evidence needed for promotion explicit
 - use anti-goals to stop premature platformization or gold-plating
@@ -84,6 +85,7 @@ When reviewing an existing roadmap:
 - flag sequencing errors where later work is assumed safe before earlier proof exists
 - surface missing anti-goals, missing stop conditions, and missing replan triggers
 - call out when multiple hidden phase changes are being smuggled into one linear plan
+- check whether owners, dependency confidence, or evidence availability make the proposed sequencing operationally unrealistic
 - end with a bottom line: acceptable, salvageable with changes, or directionally wrong
 
 Prefer findings that are severity-aware and tied to the roadmap fault line, not just the symptom.

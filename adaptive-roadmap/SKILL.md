@@ -38,14 +38,16 @@ Do not stay mode-agnostic if naming the mode will sharpen the output.
 ## Core Workflow
 
 1. State the roadmap question that actually matters.
-2. Name the current project phase as best as the evidence supports, or split the roadmap into active workstreams when different parts of the project are clearly in different phases.
+2. Choose the top-level roadmap frame that best matches reality: `Current phase` for a mostly single-phase project, or `Active workstreams` when different parts of the project are clearly in different phases.
 3. Separate `known facts`, `assumptions`, `constraints`, and `unknowns`.
 4. Make `desired outcomes` and `anti-goals` explicit before sequencing work.
 5. Break the roadmap into slices or phases only as far as current evidence supports.
-6. For each slice, state:
+6. For each slice or workstream, state:
    - goal
    - why now
    - dependencies
+   - dependency confidence
+   - evidence quality
    - evidence needed
    - decision boundary
    - invalidation check
@@ -55,13 +57,14 @@ Do not stay mode-agnostic if naming the mode will sharpen the output.
 9. End with the next decision or verification boundary instead of pretending the whole future is settled.
 
 Read [output-contract.md](references/output-contract.md) when the output needs a stronger contract.
+Read [examples.md](references/examples.md) when the roadmap shape is ambiguous or the project has multiple active streams.
 
 ## Creation Guidance
 
 When creating a roadmap:
 
 - anchor the roadmap to the current phase, not the imagined end state
-- if the project has materially different streams in different phases, split the roadmap by stream instead of forcing one fake shared phase
+- if the project has materially different streams in different phases, use `Active workstreams` as the primary shape instead of forcing one fake shared phase
 - prefer fewer slices with stronger boundaries over long fake precision
 - make the evidence needed for promotion explicit
 - use anti-goals to stop premature platformization or gold-plating

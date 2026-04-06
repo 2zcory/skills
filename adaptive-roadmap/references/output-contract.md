@@ -7,7 +7,8 @@ Use the lightest output shape that still makes the roadmap decision-ready.
 Produce a roadmap with these blocks when they materially matter:
 
 - `Current phase`
-  If the project is not honestly in one phase, use `Active workstreams` instead.
+- `Active workstreams`
+  Use this instead of `Current phase` when the project is not honestly in one phase.
 - `Desired outcomes`
 - `Anti-goals`
 - `Known facts`
@@ -22,11 +23,13 @@ Produce a roadmap with these blocks when they materially matter:
 - `What not to build yet`
 - `Next verification need`
 
-For each roadmap slice, prefer a compact structure such as:
+For each roadmap slice or workstream, prefer a compact structure such as:
 
 - `Goal`
 - `Why now`
 - `Dependencies`
+- `Dependency confidence`
+- `Evidence quality`
 - `Evidence needed`
 - `Decision boundary`
 - `Invalidation check`

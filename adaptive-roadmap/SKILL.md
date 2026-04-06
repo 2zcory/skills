@@ -89,6 +89,8 @@ When reviewing an existing roadmap:
 - flag sequencing errors where later work is assumed safe before earlier proof exists
 - surface missing anti-goals, missing stop conditions, and missing replan triggers
 - call out when multiple hidden phase changes are being smuggled into one linear plan
+- check whether the roadmap assumes strong dependencies that are actually fragile or weakly understood
+- check whether the roadmap treats thin, stale, or indirect evidence as if it were decision-grade proof
 - check whether owners, dependency confidence, or evidence availability make the proposed sequencing operationally unrealistic
 - end with a bottom line: acceptable, salvageable with changes, or directionally wrong
 

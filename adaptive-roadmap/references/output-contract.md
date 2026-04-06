@@ -50,6 +50,8 @@ Prefer a compact review output with:
 - `What should be tightened, deferred, or removed`
 - `Missing evidence loops`
 - `Missing or weak replan triggers`
+- `Weak dependency confidence`
+- `Misleading or thin evidence quality`
 - `Execution reality gaps`
 - `Bottom line`
 - `Next correction`

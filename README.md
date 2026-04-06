@@ -10,6 +10,7 @@ Public Codex skills and reusable agent workflows.
 
 ## Current Skills
 
+- `adaptive-roadmap`: create or review phased project roadmaps as living execution artifacts with explicit assumptions, decision boundaries, replan triggers, and defer-not-yet guidance
 - `ui-screen-review`: create or update durable screen-review artifacts in a project `-ctx` repo for screens, flows, or shared system surfaces, then stop at the design-approval gate
 - `html-ui-art-director`: generate HTML-first design artifacts with explicit art direction, layout choice, asset strategy, and critique scoring
 - `ui-ux-promax`: refine an existing direction toward a stronger premium result through composition, hierarchy, motion, execution quality, and UI-library judgment

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adaptive Roadmap"
+  short_description: "Build and audit living project roadmaps"
+  default_prompt: "Use $adaptive-roadmap to create or review a project roadmap as a living execution artifact: identify the current phase, desired outcomes, anti-goals, working assumptions, decision boundaries, invalidation checks, replan triggers, and what should not be built yet; route to specialist skills when business clarity, architecture, testing, release, or security work needs deeper treatment."

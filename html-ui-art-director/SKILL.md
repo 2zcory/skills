@@ -159,6 +159,7 @@ If two or more appear, revise the layout or visual language before presenting th
 
 ## Pairing guidance
 
+- Pair with `ui-design-intelligence` first when the task still needs retrieval-backed product-fit style, palette, or typography direction before art direction gets locked.
 - Pair with `ui-screen-review` when a durable review artifact must be created in a private project `-ctx` repo.
 - Pair with `ui-ux-promax` when the chosen direction needs a stronger premium finish after the layout and art direction are already clear.
 - Pair with `frontend-screen-implementation` after the HTML artifact is approved and implementation should move into production code.

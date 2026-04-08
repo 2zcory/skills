@@ -1,4 +1,4 @@
 interface:
   display_name: "UI UX Pro Max"
   short_description: "Refine an existing UI direction toward a stronger premium result"
-  default_prompt: "Use $ui-ux-promax to refine this existing UI direction with sharper hierarchy, stronger composition, more disciplined motion, better HTML/CSS/JS execution, and cleaner UI-library usage without sacrificing product clarity or scan speed."
+  default_prompt: "Use $ui-ux-promax after the broad UI direction is already chosen to refine hierarchy, composition, motion, HTML/CSS/JS execution, and UI-library usage into a stronger premium result without sacrificing product clarity or scan speed."

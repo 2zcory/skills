@@ -160,6 +160,7 @@ The correct direction is usually:
 
 ## Pairing guidance
 
+- Use `ui-design-intelligence` first when the task needs retrieval-backed direction, product-fit style selection, or structured inspiration before premium refinement begins.
 - Use this skill together with `ui-screen-review` when the work needs a durable screen or flow artifact in a project `-ctx` repository.
 - Use this skill with `dialectical-review` when the design is cycling across competing layout or visual directions and needs a synthesis before another implementation round.
 - Use this skill before implementation when the direction of the screen still feels visually weak, cluttered, or inconsistent.

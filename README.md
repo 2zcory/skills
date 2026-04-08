@@ -13,6 +13,7 @@ Public Codex skills and reusable agent workflows.
 - `adaptive-roadmap`: create or review phased project roadmaps as living execution artifacts with explicit assumptions, decision boundaries, replan triggers, and defer-not-yet guidance
 - `ui-screen-review`: create or update durable screen-review artifacts in a project `-ctx` repo for screens, flows, or shared system surfaces, then stop at the design-approval gate
 - `html-ui-art-director`: generate HTML-first design artifacts with explicit art direction, layout choice, asset strategy, and critique scoring
+- `ui-design-intelligence`: retrieve data-backed UI direction, style, palette, typography, chart, UX, and stack guidance from a bundled searchable design catalog
 - `ui-ux-promax`: refine an existing direction toward a stronger premium result through composition, hierarchy, motion, execution quality, and UI-library judgment
 - `product-ba`: clarify business problems, gather requirements, frame stakeholders and domain context, and write structured specs before implementation
 - `dialectical-review`: expose contradictions, compare competing positions or hypotheses, and synthesize a stronger direction with explicit residual risk
@@ -33,10 +34,17 @@ Public Codex skills and reusable agent workflows.
 For design-heavy work, the normal routing order is:
 
 1. `ui-screen-review` for durable review workflow in the project `-ctx` repo
-2. `html-ui-art-director` for stronger HTML/CSS artifact direction and layout choice
-3. `ui-ux-promax` when the direction exists but still needs premium refinement
-4. `design-to-frontend-handoff` after approval
-5. `frontend-screen-implementation` during coding
+2. `ui-design-intelligence` for retrieval-backed direction, product-fit style guidance, and structured design lookup
+3. `html-ui-art-director` for stronger HTML/CSS artifact direction and layout choice
+4. `ui-ux-promax` when the direction exists but still needs premium refinement
+5. `design-to-frontend-handoff` after approval
+6. `frontend-screen-implementation` during coding
+
+In short:
+
+- `ui-design-intelligence` answers "what direction fits?"
+- `html-ui-art-director` answers "what should the artifact look like?"
+- `ui-ux-promax` answers "how do we make the chosen direction feel more premium?"
 
 ## Structure
 

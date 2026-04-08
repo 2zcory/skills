@@ -60,7 +60,14 @@ If the matching `-ctx` repo is missing or unverified, stop and report that the s
    - the canonical artifact paths
    - the intended design direction
    - any important constraints
-13. Stop at the design-review gate. Do not treat artifact creation as approval, and do not jump into production implementation unless the workflow already has direction approval.
+13. For review-approved work, leave behind a handoff-minimum summary near the review output or in the brief itself:
+   - primary user goal
+   - layout structure
+   - primary and secondary actions
+   - empty, loading, success, and error states when relevant
+   - responsive constraints that implementation should preserve
+   - unresolved questions that still block clean coding
+14. Stop at the design-review gate. Do not treat artifact creation as approval, and do not jump into production implementation unless the workflow already has direction approval.
 
 ## Boundaries
 
@@ -79,3 +86,4 @@ When this skill runs successfully, leave behind:
 - current canonical artifact paths under `demos/screens/`
 - an updated `demos/screens/index.html` when the active set changed
 - a short review brief ready for user approval
+- a handoff-minimum summary when the review direction is approved enough that implementation may start next

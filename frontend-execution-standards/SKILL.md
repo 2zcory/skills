@@ -5,6 +5,15 @@ description: "Use when frontend code work needs modern implementation standards 
 
 # Frontend Execution Standards
 
+Deprecated public UI skill.
+
+Primary replacement path:
+
+1. use the three-core UI route for review, direction, and artifact work
+2. preserve the standards here as implementation discipline during normal coding rather than as a first-choice public UI skill
+
+Keep this skill only as a temporary compatibility bridge while the public UI surface is being simplified.
+
 Use this skill when the frontend task is already implementation-facing and the main need is execution quality, not product definition or visual exploration.
 
 Do not use this skill as the only active skill for shared public chrome or other `system surface` work before a design boundary is approved.
@@ -27,6 +36,8 @@ Keep this file focused on operating rules. Load only the references needed for t
 
 Do not use this skill for product requirements clarification, screen-review workflow, pure art direction, or broad architecture decisions that should route to a different skill.
 Do not use it as the entry point for shared headers, nav shells, or combined brand plus locale plus theme surfaces that still need hierarchy review.
+Do not treat this skill as the owner of a single approved screen slice when the main question is simply "implement this screen well"; in that case use `frontend-screen-implementation` as the primary skill and pair this one only when code-quality discipline needs to stay explicit.
+Do not choose this as a first-choice public UI skill when the three-core path already covers the task.
 
 ## Goal
 
@@ -140,6 +151,7 @@ If that pressure is real, load `references/pattern-selection.md` and choose the 
 ## Pairing Guidance
 
 - Pair with `frontend-screen-implementation` when the task is one approved screen or flow slice and both workflow structure and code standards matter.
+- When both skills apply, let `frontend-screen-implementation` own the screen slice and let this skill act as the standards overlay for rendering, a11y, state, and responsive verification discipline.
 - Pair with `ui-screen-review` first when the work touches shared public chrome or another `system surface`.
 - Pair with `ui-ux-promax` when the implementation is correct but the visual execution still feels generic or weak.
 - Pair with `web-architecture-review` when the real question is rendering or repository architecture rather than code-level implementation quality.

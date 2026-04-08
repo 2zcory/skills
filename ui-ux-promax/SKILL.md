@@ -5,6 +5,15 @@ description: "Use when a UI or UX task needs a stronger premium direction with c
 
 # UI UX Pro Max
 
+Deprecated public UI skill.
+
+Primary replacement path:
+
+1. use `ui-design-intelligence` when the direction is still unclear
+2. use `html-ui-art-director` when the artifact or layout direction still needs to be generated or reset
+
+Keep this skill only as a temporary compatibility bridge while its strongest premium-refinement guidance is being absorbed into the surviving core UI path.
+
 Use this skill when a screen, flow, or product surface should feel more premium and more intentional without becoming noisy, bloated, or visually confused.
 
 Keep this file focused on the operating model. Load reference files only when the task needs deeper guidance:
@@ -25,6 +34,8 @@ Keep this file focused on the operating model. Load reference files only when th
 - The team is over-relying on a UI library and needs stronger product-specific direction.
 
 Do not use this skill for tiny polish requests such as one spacing tweak, one color tweak, or one icon swap unless those changes are part of a larger direction shift.
+Do not use this skill as the first artifact generator when the task still lacks a clear layout archetype or authored HTML direction; route to `html-ui-art-director` first when the base artifact does not exist yet.
+Do not choose this as a first-choice public UI skill when the three-core path already covers the task.
 
 ## Goal
 
@@ -184,6 +195,7 @@ Prefer compact outputs such as:
 ## Boundaries
 
 - Do not turn premium UX into decorative excess.
+- Do not let this skill replace first-pass artifact generation when the screen still needs a defended layout choice and authored HTML direction.
 - Do not replace product requirements with visual taste.
 - Do not make motion heavier than the task justifies.
 - Do not duplicate project-local UI workflow or policy.

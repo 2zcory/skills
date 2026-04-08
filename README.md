@@ -14,7 +14,6 @@ Public Codex skills and reusable agent workflows.
 - `ui-screen-review`: create or update durable screen-review artifacts in a project `-ctx` repo for screens, flows, or shared system surfaces, then stop at the design-approval gate
 - `html-ui-art-director`: generate HTML-first design artifacts with explicit art direction, layout choice, asset strategy, and critique scoring
 - `ui-design-intelligence`: retrieve data-backed UI direction, style, palette, typography, chart, UX, and stack guidance from a bundled searchable design catalog
-- `ui-ux-promax`: refine an existing direction toward a stronger premium result through composition, hierarchy, motion, execution quality, and UI-library judgment
 - `product-ba`: clarify business problems, gather requirements, frame stakeholders and domain context, and write structured specs before implementation
 - `dialectical-review`: expose contradictions, compare competing positions or hypotheses, and synthesize a stronger direction with explicit residual risk
 - `web-app-bootstrap`: bootstrap or refresh a private web-app `-ctx` repository from the shared Context OS template and starter kit, create the first story, and activate only the context surfaces the project currently needs
@@ -23,13 +22,35 @@ Public Codex skills and reusable agent workflows.
 - `web-release-ops`: turn web-app release work into an explicit readiness, smoke-test, rollback, and post-release workflow
 - `web-security-baseline`: review common web-app risk surfaces such as auth, sessions, permissions, inputs, uploads, secrets, and abuse controls before build or release
 - `api-contract-workflow`: turn frontend-backend boundaries into explicit contracts covering payloads, errors, pagination, auth expectations, and client-state implications
-- `design-to-frontend-handoff`: turn approved screen or flow artifacts into implementation-ready frontend handoff covering states, constraints, scope, and dependencies
-- `frontend-screen-implementation`: implement one approved screen or flow slice with explicit user-facing states, interaction ownership, and responsive behavior
-- `frontend-execution-standards`: apply modern React or Next.js frontend implementation standards covering rendering boundaries, component design, state discipline, semantics, accessibility, responsive behavior, and current stable-version bias
 - `algorithmic-problem-solving`: solve algorithm and data-structure tasks with paradigm selection, data-structure choice, complexity analysis, correctness reasoning, and implementation guidance
 - `editorial-voice-shaping`: diagnose route-job mismatch, identify AI-like or over-explanatory copy pathologies, and rewrite public-facing website copy so it reads more naturally without losing authored voice or route fit
 
-## Design Pipeline
+## UI Core
+
+The primary public UI path is now intentionally narrow:
+
+1. `ui-screen-review`
+2. `ui-design-intelligence`
+3. `html-ui-art-director`
+
+Use these three as the default UI route unless a stronger project-specific reason says otherwise.
+
+In short:
+
+- `ui-screen-review` answers "what needs review before implementation?"
+- `ui-design-intelligence` answers "what direction fits this product or screen?"
+- `html-ui-art-director` answers "what should the artifact look like?"
+
+## Deprecated UI Skills
+
+These skills remain in the repo during the transition, but they are no longer primary public entry points:
+
+- `ui-ux-promax`: deprecated in favor of `html-ui-art-director` for most public UI routing; use only as a temporary compatibility bridge while premium-refinement guidance is being absorbed.
+- `design-to-frontend-handoff`: deprecated in favor of stronger implementation-ready output from `ui-screen-review`.
+- `frontend-screen-implementation`: deprecated as a public UI routing layer; normal coding work should start from the approved artifact path instead of a separate UI implementation skill.
+- `frontend-execution-standards`: deprecated as a public UI routing layer; preserve its guidance as implementation discipline rather than as a first-choice UI skill.
+
+## Legacy Design Pipeline
 
 For design-heavy work, the normal routing order is:
 
@@ -40,11 +61,12 @@ For design-heavy work, the normal routing order is:
 5. `design-to-frontend-handoff` after approval
 6. `frontend-screen-implementation` during coding
 
-In short:
+## Overlap Guards
 
-- `ui-design-intelligence` answers "what direction fits?"
-- `html-ui-art-director` answers "what should the artifact look like?"
-- `ui-ux-promax` answers "how do we make the chosen direction feel more premium?"
+- `frontend-screen-implementation` is the primary skill when one approved screen or tightly scoped flow slice is the unit of work.
+- `frontend-execution-standards` is the standards overlay when rendering boundaries, component discipline, a11y, responsive verification, or framework-quality concerns need to stay explicit.
+- `html-ui-art-director` should generate or reset the authored artifact when the layout direction is not settled yet.
+- `ui-ux-promax` should refine an existing direction when the artifact exists but still feels generic, flat, or under-finished.
 
 ## Structure
 

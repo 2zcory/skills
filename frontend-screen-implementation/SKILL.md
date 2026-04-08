@@ -5,6 +5,16 @@ description: "Use when one approved screen or tightly scoped flow slice needs fr
 
 # Frontend Screen Implementation
 
+Deprecated public UI skill.
+
+Primary replacement path:
+
+1. use `ui-screen-review` to keep the approved artifact and implementation boundary explicit
+2. use `html-ui-art-director` when the artifact still needs stronger authored direction
+3. then continue as normal coding work instead of routing through a separate public UI implementation skill
+
+Keep this skill only as a temporary compatibility bridge while the public UI surface is being simplified.
+
 Use this skill when a single screen or tightly scoped flow slice is ready to be implemented on the frontend.
 
 ## Use this skill when
@@ -14,6 +24,8 @@ Use this skill when a single screen or tightly scoped flow slice is ready to be 
 - The work is narrow enough to reason about as one screen or one closely related interaction slice.
 
 Do not use this skill for broad frontend architecture, vague design exploration, or large multi-area refactors.
+Do not use this skill as the only routing layer when the real need is cross-cutting frontend code standards, rendering-boundary cleanup, or component-pattern discipline across multiple surfaces; pair with `frontend-execution-standards` for that.
+Do not choose this as a first-choice public UI skill when the three-core path already covers the task.
 
 ## Workflow
 
@@ -56,6 +68,7 @@ When this skill runs successfully, leave behind:
 ## Boundaries
 
 - Keep the skill screen-slice oriented, not framework encyclopedic.
+- Treat this skill as the primary owner only when one approved screen or tightly scoped flow slice is the actual unit of work.
 - Do not ignore empty, error, or narrow-viewport behavior.
 - Do not let one implementation slice absorb unrelated refactors by default.
 - Use project conventions for actual code structure; this skill guides execution, not repo policy.

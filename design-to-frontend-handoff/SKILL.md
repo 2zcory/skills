@@ -5,6 +5,15 @@ description: "Use when an approved UI review artifact needs to become implementa
 
 # Design to Frontend Handoff
 
+Deprecated public UI skill.
+
+Primary replacement path:
+
+1. use `ui-screen-review` and leave behind stronger implementation-ready review output
+2. move into normal coding work after the approved artifact is clear enough
+
+Keep this skill only as a temporary compatibility bridge while handoff-minimum expectations are being folded into the core UI review path.
+
 Use this skill when a reviewed screen or flow direction is approved and the next step is to prepare clean frontend handoff before coding starts.
 
 ## Use this skill when
@@ -14,6 +23,7 @@ Use this skill when a reviewed screen or flow direction is approved and the next
 - A frontend task risks drifting because the artifact is visually clear but operationally vague.
 
 Do not use this skill to replace screen review or to directly implement the UI code. Pair with `ui-screen-review` before approval and `frontend-screen-implementation` when coding begins.
+Do not choose this as a first-choice public UI skill when the three-core path already covers the task.
 
 ## Workflow
 

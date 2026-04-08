@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import shutil
 import sys
 from pathlib import Path
 
@@ -70,7 +71,7 @@ def ensure_runtime_link(skill_dir: Path, runtime_root: Path, dry_run: bool, forc
             return f"skip    {runtime_entry} exists and is not a symlink"
         if not dry_run:
             if runtime_entry.is_dir():
-                os.rmdir(runtime_entry)
+                shutil.rmtree(runtime_entry)
             else:
                 runtime_entry.unlink()
             runtime_entry.symlink_to(target, target_is_directory=True)

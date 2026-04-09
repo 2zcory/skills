@@ -1,4 +1,0 @@
-interface:
-  display_name: "Frontend Execution Standards"
-  short_description: "Apply modern frontend patterns and code-quality standards"
-  default_prompt: "Use $frontend-execution-standards to implement or refactor this frontend code with modern React or Next.js patterns, explicit user-facing states, semantic HTML, accessibility, responsive behavior, and current stable dependency choices."

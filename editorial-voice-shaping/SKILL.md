@@ -34,7 +34,7 @@ Check these three gates first:
 Routing:
 
 - if the route job is still unclear, use `product-ba` first
-- if the screen structure itself is the main issue, use `ui-screen-review` or `html-ui-art-director` first
+- if the screen structure itself is the main issue, use `frontend-studio` first
 - if the route is structurally fine but the copy is heavy, stiff, or over-authored, use this skill
 
 ## Workflow

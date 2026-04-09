@@ -1,9 +1,9 @@
 ---
-name: "ui-design-intelligence"
-description: "Use when a UI or frontend task needs one primary owner from design direction through artifact generation, coding, motion and asset decisions, and practical verification. Helpful for choosing product-fit styles, building durable demos or artifacts, implementing HTML/CSS/JS or framework code, and applying retrieval-backed design judgment without collapsing into generic output."
+name: "frontend-studio"
+description: "Use when a frontend task needs one primary owner from design direction through artifact generation, coding, motion and asset decisions, and practical verification. Helpful for choosing product-fit styles, building durable demos or artifacts, implementing HTML/CSS/JS or framework code, and applying retrieval-backed design judgment without collapsing into generic output."
 ---
 
-# UI Design Intelligence
+# Frontend Studio
 
 Use this skill when the task needs one primary owner for UI or frontend work across the full path:
 
@@ -100,9 +100,9 @@ Do not override an approved design system or project constraint, but do not arti
 Run the bundled search tool from the runtime skill path:
 
 ```bash
-python3 ~/.codex/skills/ui-design-intelligence/scripts/search.py "<query>" --domain <domain>
-python3 ~/.codex/skills/ui-design-intelligence/scripts/search.py "<query>" --stack <stack>
-python3 ~/.codex/skills/ui-design-intelligence/scripts/search.py "<query>" --design-system -f markdown
+python3 ~/.codex/skills/frontend-studio/scripts/search.py "<query>" --domain <domain>
+python3 ~/.codex/skills/frontend-studio/scripts/search.py "<query>" --stack <stack>
+python3 ~/.codex/skills/frontend-studio/scripts/search.py "<query>" --design-system -f markdown
 ```
 
 Prefer targeted domain or stack searches first. Use `--design-system` only when the user really needs an initial direction pack.
@@ -110,23 +110,22 @@ Prefer targeted domain or stack searches first. Use `--design-system` only when 
 ## Query patterns
 
 - product-fit direction:
-  `python3 ~/.codex/skills/ui-design-intelligence/scripts/search.py "fintech dashboard trust premium" --domain product`
+  `python3 ~/.codex/skills/frontend-studio/scripts/search.py "fintech dashboard trust premium" --domain product`
 - style lookup:
-  `python3 ~/.codex/skills/ui-design-intelligence/scripts/search.py "editorial portfolio monochrome" --domain style`
+  `python3 ~/.codex/skills/frontend-studio/scripts/search.py "editorial portfolio monochrome" --domain style`
 - palette lookup:
-  `python3 ~/.codex/skills/ui-design-intelligence/scripts/search.py "health wellness calming" --domain color`
+  `python3 ~/.codex/skills/frontend-studio/scripts/search.py "health wellness calming" --domain color`
 - typography lookup:
-  `python3 ~/.codex/skills/ui-design-intelligence/scripts/search.py "luxury editorial serif" --domain typography`
+  `python3 ~/.codex/skills/frontend-studio/scripts/search.py "luxury editorial serif" --domain typography`
 - UX review support:
-  `python3 ~/.codex/skills/ui-design-intelligence/scripts/search.py "form accessibility loading feedback" --domain ux`
+  `python3 ~/.codex/skills/frontend-studio/scripts/search.py "form accessibility loading feedback" --domain ux`
 - stack guidance:
-  `python3 ~/.codex/skills/ui-design-intelligence/scripts/search.py "suspense streaming caching" --stack nextjs`
+  `python3 ~/.codex/skills/frontend-studio/scripts/search.py "suspense streaming caching" --stack nextjs`
 
 ## Pairing guidance
 
 - Pair with `dialectical-review` first when two materially different directions are both plausible and the contradiction should be resolved before more UI work.
-- Pair with `frontend-execution-standards` only when a narrower code-quality lens is explicitly useful after this skill already owns the main UI/frontend path.
-- Use `ui-screen-review`, `html-ui-art-director`, `design-to-frontend-handoff`, or `frontend-screen-implementation` only as compatibility or specialist fallback paths when the user explicitly wants those legacy boundaries.
+- Pair with `web-testing-strategy` only when a broader product-risk testing plan is explicitly needed beyond this skill's normal verification pass.
 
 ## Domains
 

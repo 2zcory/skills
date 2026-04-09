@@ -1,4 +1,0 @@
-interface:
-  display_name: "UI Design Intelligence"
-  short_description: "Retrieve data-backed UI direction, UX checks, and stack guidance"
-  default_prompt: "Use $ui-design-intelligence to retrieve product-fit styles, palettes, typography, UX checks, landing patterns, charts, or stack-specific guidance before we lock design direction or implementation."

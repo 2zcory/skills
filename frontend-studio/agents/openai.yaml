@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Studio"
+  short_description: "Own frontend work from direction through artifact, code, motion, and verification"
+  default_prompt: "Use $frontend-studio to own this frontend task end to end: choose direction, create or revise the artifact, implement the code, handle icons/images/animation, and add practical verification."

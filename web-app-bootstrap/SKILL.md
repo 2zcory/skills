@@ -13,7 +13,7 @@ Use this skill when a web application project needs its private `-ctx` repositor
 - An existing web-app `-ctx` repository is too sparse, ad hoc, or missing the expected starter surfaces.
 - The next step is to prepare project context before deeper product BA, UI review, or implementation work begins.
 
-Do not use this skill to choose the web stack, resolve architecture debates, or implement application code. Pair with `product-ba`, `dialectical-review`, or `ui-screen-review` when those triggers appear.
+Do not use this skill to choose the web stack, resolve architecture debates, or implement application code. Pair with `product-ba`, `dialectical-review`, or `frontend-studio` when those triggers appear.
 
 ## Preconditions
 

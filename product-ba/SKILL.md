@@ -41,6 +41,19 @@ Routing:
 
 Do not ask more questions when the remaining uncertainty can be recorded safely as open questions.
 
+Also run this product-force screen before staying in BA mode:
+
+- is the primary audience specific enough to shape product tradeoffs rather than naming a generic visitor class
+- is there a concrete first-use reason, not just a structural description of the product
+- is there a believable return reason, not just a statement that the content will keep growing
+- is the differentiation claim stronger than taxonomy, organization, or generic clarity
+
+Routing upgrade:
+
+- if the main gap is still missing facts, actors, rules, or workflow clarity, stay in BA mode
+- if the main gap is choosing which audience, tension, identity claim, or product force should define the work, route to `dialectical-review` after the lightest safe clarification pass
+- if the artifact sounds coherent but still generic, treat that as a failure signal rather than proof the BA pass is complete
+
 ## Separate request from need
 
 Early in the interaction, separate:
@@ -124,6 +137,21 @@ Also make the following explicit when relevant:
 - audit event expectations and dispute handling path
 - operational or compliance dependencies that could block release or sign-off
 
+Increase rigor for product-definition or strategy-adjacent BA work when:
+
+- the product could sound coherent while still feeling interchangeable
+- the audience is broad enough that different directions would produce different products
+- the core value depends on desire, memorability, credibility, or repeated return rather than only task completion
+
+In these cases, make the following explicit before handoff:
+
+- primary audience
+- anti-audience or clear non-fit cases
+- first-use reason
+- return reason
+- differentiating claim
+- the defining tension, if competing product readings would lead to different downstream choices
+
 ## Evidence rule
 
 Do not let clean BA prose hide weak evidence.
@@ -161,16 +189,24 @@ If a key requirement, actor rule, or success signal is inferred rather than conf
    - in-scope and out-of-scope items
    - priorities or sequencing when they affect decisions
    - non-functional concerns when they matter, such as auditability, latency, reliability, privacy, or security
-7. After each interview round or clarification pass, summarize:
+7. For product-definition or strategy-adjacent work, run a product-force check:
+   - who the work is trying hardest to matter to
+   - who it is not for
+   - why the right audience should care on first use
+   - why they should return
+   - whether the current direction is distinctive enough to avoid sounding like a tidy but generic system
+8. After each interview round or clarification pass, summarize:
    - what is known
    - what is assumed
    - what is still unknown
    - what the next decision depends on
-8. Stop asking questions once the next artifact can be produced safely enough to move forward.
-9. Check whether the problem is clear enough for the next handoff; if not, capture the gap explicitly before producing the artifact.
-10. Convert the clarified problem into the lightest fitting artifact.
-11. Highlight unresolved risks, dependencies, and scope boundaries before handoff to design or engineering.
-12. Only after the problem is clear, move into solution options, implementation slices, or handoff material.
+   - whether the remaining problem is still BA clarification or has become a contradiction or identity-choice problem
+9. Stop asking questions once the next artifact can be produced safely enough to move forward.
+10. Check whether the problem is clear enough for the next handoff; if not, capture the gap explicitly before producing the artifact.
+11. Convert the clarified problem into the lightest fitting artifact.
+12. Highlight unresolved risks, dependencies, and scope boundaries before handoff to design or engineering.
+13. If the main unresolved question is now a direction choice, identity choice, or competing product reading, stop and hand off to `dialectical-review` instead of stretching BA output further.
+14. Only after the problem is clear, move into solution options, implementation slices, or handoff material.
 
 For deeper prompting on stakeholder mapping, AS-IS/TO-BE workflow, NFRs, prioritization, and traceability, read [`references/analysis-checklists.md`](references/analysis-checklists.md).
 
@@ -191,18 +227,32 @@ Readiness by handoff target:
 
 If those conditions are not met, stop and record the gap rather than pretending the handoff is ready.
 
+Additional readiness checks for product-definition work:
+
+- the primary audience is specific enough to change downstream decisions
+- the anti-audience or non-fit case is visible
+- the first-use reason is stronger than “the site/app is organized clearly”
+- the return reason is more concrete than “there will be more content later”
+- the differentiating claim is strong enough that the product would still feel distinct even if implemented well
+
+If those checks fail, do not present the BA artifact as product-ready. Either keep it explicitly provisional or route to `dialectical-review`.
+
 ## Expected output shape
 
 Prefer concise, decision-friendly outputs such as:
 
 - problem summary
 - business goal and success metrics
+- primary audience and anti-audience when product force matters
 - in-scope and out-of-scope items
 - actors and stakeholder map
 - current workflow and target-state change
 - business rules and non-goals
 - functional and non-functional requirements
 - priorities, dependencies, or sequencing notes when relevant
+- first-use reason and return reason when product definition matters
+- differentiating claim or product tension when relevant
+- confirmed facts, working assumptions, and decision-blocking unknowns when confidence matters
 - assumptions, constraints, and risks
 - user stories
 - acceptance criteria
@@ -237,12 +287,14 @@ Prefer concise, decision-friendly outputs such as:
 - Use architecture or implementation skills only after the business problem, scope boundary, and success signal are clear enough to trust.
 - If the task already has an approved problem frame and now needs execution planning, hand off to the project-local planning workflow instead of re-running BA discovery.
 - In interview mode, stop and convert to an artifact when another question round would mostly repeat or polish rather than reduce real delivery risk.
+- If the remaining problem is “what should make this product matter” rather than “what does this need,” route to `dialectical-review` after the smallest useful BA clarification pass.
 
 Treat these as hard routing guards:
 
 - if the main problem is choosing between materially competing directions, route to `dialectical-review` instead of stretching BA discovery into decision arbitration
 - if the business frame is already approved and the remaining work is slicing, sequencing, or delivery coordination, do not keep using this skill as a planning surrogate
 - if the next useful output is mainly screen direction, frontend handoff, or implementation behavior, hand off to the appropriate downstream skill instead of expanding the BA artifact
+- if the artifact is coherent but the product still feels generic, interchangeable, or weakly motivating, do not keep polishing the BA writeup; route to contradiction or identity-focused review
 
 ## Boundaries
 
@@ -254,3 +306,4 @@ Treat these as hard routing guards:
 - Do not turn interview mode into an endless questionnaire or faux-workshop.
 - Do not replace project-local workflow or trusted project context; use this skill as an execution aid, not the source of truth.
 - Do not let this skill become the default home for contradiction resolution, delivery planning, or design execution once the BA decision boundary has already been crossed.
+- Do not mistake a cleanly written but generic product definition for a successful BA outcome.

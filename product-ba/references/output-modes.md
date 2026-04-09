@@ -25,6 +25,8 @@ Output shape:
 - problem summary
 - business goal
 - actors and decision owner
+- confirmed facts
+- working assumptions
 - in-scope and out-of-scope
 - business rules
 - functional requirements
@@ -41,6 +43,7 @@ Output shape:
 
 - story set
 - acceptance criteria per story
+- confirmed facts and working assumptions that affect the stories
 - business rules that apply across stories
 - edge cases or failure states
 - dependencies or sequencing notes
@@ -59,6 +62,8 @@ Output shape:
 - business context
 - problem statement
 - stakeholders
+- confirmed facts
+- working assumptions
 - current workflow
 - target workflow
 - scope boundary
@@ -67,6 +72,17 @@ Output shape:
 - success measures
 - risks and dependencies
 - open decisions
+
+## Product-definition add-on
+
+When the output is clarifying a product or public surface rather than a narrow operational feature, add:
+
+- primary audience
+- anti-audience or non-fit cases
+- first-use reason
+- return reason
+- differentiating claim
+- defining tension when competing readings would lead to different downstream choices
 
 ## Selection Heuristics
 
@@ -83,3 +99,4 @@ For every mode:
 - keep requirements observable and testable
 - record unresolved questions explicitly
 - avoid implementation detail unless it is already a real constraint
+- do not treat generic clarity or tidy taxonomy as sufficient product differentiation

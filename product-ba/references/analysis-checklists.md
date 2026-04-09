@@ -42,6 +42,19 @@ Ask:
 - whether the request is a requirement or only a proposed solution
 - what would happen if the request is delivered but the problem remains
 
+## Product Force Check
+
+Use when a product, public surface, or positioning problem could sound clear while still feeling weak.
+
+Ask:
+
+- who should care most about this product
+- who is explicitly not the target
+- what concrete first-use reason should pull the right audience in
+- what concrete return reason should bring them back
+- what would make this product feel distinct from a well-organized generic alternative
+- whether the remaining problem is still BA clarification or has become a contradiction about direction, identity, or audience choice
+
 ## Non-Functional Concerns
 
 Prompt only when relevant:

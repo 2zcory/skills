@@ -1,6 +1,6 @@
 ---
 name: "ui-ux-promax"
-description: "Use when a UI or UX task needs a stronger premium direction with clearer hierarchy, richer visuals, better composition, and more purposeful motion while still staying disciplined, scannable, and product-correct. Use it to improve design direction, HTML/CSS/JS execution quality, UI library choices, and modern frontend presentation without collapsing into generic templates or decorative excess."
+description: "Deprecated compatibility skill for cases where an older workflow still wants a separate premium-refinement pass after direction exists. Use it only when that legacy lane is explicitly requested instead of letting `ui-design-intelligence` own premium direction, motion, and frontend execution quality."
 ---
 
 # UI UX Pro Max
@@ -9,8 +9,8 @@ Deprecated public UI skill.
 
 Primary replacement path:
 
-1. use `ui-design-intelligence` when the direction is still unclear
-2. use `html-ui-art-director` when the artifact or layout direction still needs to be generated or reset
+1. use `ui-design-intelligence` as the primary owner for direction, artifact, implementation, motion, and verification
+2. keep this skill only as a compatibility refinement bridge when an older workflow still names it directly
 
 Keep this skill only as a temporary compatibility bridge while its strongest premium-refinement guidance is being absorbed into the surviving core UI path.
 
@@ -34,8 +34,8 @@ Keep this file focused on the operating model. Load reference files only when th
 - The team is over-relying on a UI library and needs stronger product-specific direction.
 
 Do not use this skill for tiny polish requests such as one spacing tweak, one color tweak, or one icon swap unless those changes are part of a larger direction shift.
-Do not use this skill as the first artifact generator when the task still lacks a clear layout archetype or authored HTML direction; route to `html-ui-art-director` first when the base artifact does not exist yet.
-Do not choose this as a first-choice public UI skill when the three-core path already covers the task.
+Do not use this skill as the first artifact generator when the task still lacks a clear layout archetype or authored HTML direction; let `ui-design-intelligence` own that first pass unless the user explicitly wants `html-ui-art-director`.
+Do not choose this as a first-choice public UI skill.
 
 ## Goal
 
@@ -171,8 +171,8 @@ The correct direction is usually:
 
 ## Pairing guidance
 
-- Use `ui-design-intelligence` first when the task needs retrieval-backed direction, product-fit style selection, or structured inspiration before premium refinement begins.
-- Use this skill together with `ui-screen-review` when the work needs a durable screen or flow artifact in a project `-ctx` repository.
+- Use `ui-design-intelligence` first when the task needs retrieval-backed direction, artifact ownership, implementation, or structured inspiration.
+- Use this skill together with `ui-screen-review` only when the work needs a legacy durable screen or flow artifact in a project `-ctx` repository.
 - Use this skill with `dialectical-review` when the design is cycling across competing layout or visual directions and needs a synthesis before another implementation round.
 - Use this skill before implementation when the direction of the screen still feels visually weak, cluttered, or inconsistent.
 - Use project-local product or workflow context as the source of truth; this skill improves direction, not policy.
@@ -196,6 +196,7 @@ Prefer compact outputs such as:
 
 - Do not turn premium UX into decorative excess.
 - Do not let this skill replace first-pass artifact generation when the screen still needs a defended layout choice and authored HTML direction.
+- Do not present this skill as a normal public entry point now that `ui-design-intelligence` owns the primary UI/frontend path.
 - Do not replace product requirements with visual taste.
 - Do not make motion heavier than the task justifies.
 - Do not duplicate project-local UI workflow or policy.

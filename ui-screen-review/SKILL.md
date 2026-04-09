@@ -1,21 +1,22 @@
 ---
 name: "ui-screen-review"
-description: "Use when the task involves screen-level UI/UX, shared public chrome, or multi-screen flow changes and the user wants a quick, durable review artifact in a project `-ctx` repository before implementation. Classify the change as `minor-ui`, `screen-review-required`, `system-surface-review-required`, or `flow-review-required`; for review-required work, maintain the canonical `demos/screens/` layout, update `index.html`, prepare a concise review brief, and stop at the design-approval gate rather than jumping straight into production code."
+description: "Compatibility UI skill for projects that already rely on a durable `demos/screens/` review workflow in a private `-ctx` repository. Use it to preserve launcher-based review artifacts when legacy continuity matters more than routing normal UI/frontend work through `ui-design-intelligence`."
 ---
 
 # UI Screen Review
 
-Use this skill for screen-level UI/UX work that needs a durable, quick-to-open review artifact before implementation.
+Compatibility UI skill.
+
+Use this skill only when a project already relies on the durable `demos/screens/` review workflow and that compatibility boundary still matters more than routing through `ui-design-intelligence`.
 
 ## Use this skill when
 
-- A new screen is being added.
-- One screen's layout, hierarchy, CTA structure, or responsive behavior is changing meaningfully.
-- Shared public chrome such as headers, nav shells, or combined brand-plus-global-control surfaces is changing materially.
-- A multi-screen flow or navigation sequence needs review.
-- A UI regression should be isolated as a screen or flow artifact before another fix round.
+- An existing project already uses `demos/screens/` artifacts and needs that durable review format preserved.
+- A screen or flow change should be expressed in the existing launcher-based review set for continuity.
+- A UI regression should be isolated as a screen or flow artifact before another fix round inside that established workflow.
 
 Do not use this skill for obvious `minor-ui` changes such as tiny copy, spacing, color, or icon adjustments that do not materially change screen direction.
+Do not choose this as the normal first-entry skill for new UI/frontend work; use `ui-design-intelligence` instead.
 
 ## Preconditions
 
@@ -68,6 +69,11 @@ If the matching `-ctx` repo is missing or unverified, stop and report that the s
    - responsive constraints that implementation should preserve
    - unresolved questions that still block clean coding
 14. Stop at the design-review gate. Do not treat artifact creation as approval, and do not jump into production implementation unless the workflow already has direction approval.
+
+## Replacement path
+
+- Use `ui-design-intelligence` as the normal primary owner for new UI/frontend work, including demos, artifacts, implementation, and verification.
+- Keep this skill only when the project explicitly needs legacy `demos/screens/` continuity.
 
 ## Boundaries
 

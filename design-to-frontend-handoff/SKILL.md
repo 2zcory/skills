@@ -1,6 +1,6 @@
 ---
 name: "design-to-frontend-handoff"
-description: "Use when an approved UI review artifact needs to become implementation-ready frontend handoff. Turn the screen or flow direction into explicit scope, states, interaction notes, responsive constraints, and unresolved questions so frontend implementation does not start from vague interpretation."
+description: "Deprecated compatibility skill for workflows that still want a separate frontend handoff artifact after UI direction is already approved. Use it only when that extra handoff layer is explicitly required instead of letting `ui-design-intelligence` own the path through implementation."
 ---
 
 # Design to Frontend Handoff
@@ -9,8 +9,8 @@ Deprecated public UI skill.
 
 Primary replacement path:
 
-1. use `ui-screen-review` and leave behind stronger implementation-ready review output
-2. move into normal coding work after the approved artifact is clear enough
+1. use `ui-design-intelligence` as the primary owner for direction, artifact, and implementation
+2. keep this skill only when a workflow explicitly still wants a separate handoff artifact
 
 Keep this skill only as a temporary compatibility bridge while handoff-minimum expectations are being folded into the core UI review path.
 
@@ -22,8 +22,8 @@ Use this skill when a reviewed screen or flow direction is approved and the next
 - The design direction is clear, but states, constraints, or interaction details are still implicit.
 - A frontend task risks drifting because the artifact is visually clear but operationally vague.
 
-Do not use this skill to replace screen review or to directly implement the UI code. Pair with `ui-screen-review` before approval and `frontend-screen-implementation` when coding begins.
-Do not choose this as a first-choice public UI skill when the three-core path already covers the task.
+Do not use this skill to replace `ui-design-intelligence` as the normal owner of artifact and code work.
+Do not choose this as a first-choice public UI skill.
 
 ## Workflow
 

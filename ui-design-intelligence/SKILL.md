@@ -1,71 +1,99 @@
 ---
 name: "ui-design-intelligence"
-description: "Use when a UI or UX task needs data-backed design recommendations instead of taste-only prompting. Helpful for choosing product-fit styles, color directions, typography pairings, landing patterns, chart choices, UX checks, and stack-specific guidance before review, handoff, or implementation. Best for early direction setting, retrieval-backed UI review, and cross-industry inspiration without overriding an existing project design system."
+description: "Use when a UI or frontend task needs one primary owner from design direction through artifact generation, coding, motion and asset decisions, and practical verification. Helpful for choosing product-fit styles, building durable demos or artifacts, implementing HTML/CSS/JS or framework code, and applying retrieval-backed design judgment without collapsing into generic output."
 ---
 
 # UI Design Intelligence
 
-Use this skill when the task needs retrieval-backed design judgment from a bundled catalog of UI styles, color palettes, typography pairings, product patterns, charts, UX guidelines, and stack notes.
+Use this skill when the task needs one primary owner for UI or frontend work across the full path:
 
-This skill complements the existing design pipeline:
+- retrieval-backed direction setting
+- durable artifact or demo creation
+- HTML/CSS/JS or framework implementation
+- icon, image, and animation strategy
+- practical verification, including unit-test thinking when warranted
 
-- use this skill for recommendation, lookup, and retrieval-backed review
-- use `ui-screen-review` for durable review artifacts
-- use `html-ui-art-director` for stronger HTML-first concept direction
-- use `ui-ux-promax` when an accepted direction still needs premium refinement
-- use `design-to-frontend-handoff` or `frontend-screen-implementation` after direction is accepted
+This skill is now the normal first-entry owner for UI and frontend work. Retrieval is still part of the method, but it is no longer the limit of the skill.
 
 Load the bundled search engine only when needed. Do not dump raw catalog output into the user response when a short synthesis is enough.
 
 ## Use this skill when
 
 - The user asks what visual direction fits a product, audience, or industry.
-- A screen needs structured inspiration instead of generic prompting.
-- You want a quick style, palette, typography, landing, chart, or UX recommendation with supporting retrieval.
-- A UI review would benefit from a retrieval-backed checklist.
-- The task needs stack-specific frontend guidance from a bundled reference set.
+- A screen, route, or product surface needs structured inspiration instead of generic prompting.
+- A durable demo, reviewable artifact, or HTML-first concept should be created or revised.
+- The chosen direction should be implemented into frontend code.
+- The task needs icon, image, placeholder, or motion direction and possibly code.
+- The frontend change needs explicit quality checks or targeted unit tests.
+- A UI review would benefit from retrieval-backed critique before or during implementation.
 
 ## Do not use this skill when
 
-- The project already has an approved design direction and only needs polish. Use `ui-ux-promax`.
-- The project workflow requires a durable design review artifact first. Use `ui-screen-review`.
+- The task is purely backend, infrastructure, or non-UI architecture.
+- The main contradiction is between materially different product or design directions and should be synthesized first. Use `dialectical-review`.
 - The task is a tiny one-off visual tweak that does not need retrieval.
-- The user needs implementation only and the direction is already approved.
+- The user explicitly asks for a narrower specialist lens instead of one end-to-end UI owner.
 
 ## Core rule
 
-Treat this skill as decision support, not as an authority that overrides the repository's existing design system, product constraints, or approved UI review artifacts.
+Treat this skill as the primary UI/frontend owner, but do not let that become vague omnibus behavior.
+
+The correct operating model is:
+
+- choose the direction with evidence
+- generate or revise the artifact that expresses that direction
+- implement the direction cleanly
+- verify the user-facing result proportionally
+
+Do not override an approved design system or project constraint, but do not artificially split the job across several UI skills when one coherent pass would be better.
 
 ## Modes
 
-- `recommend`
-  Use for style, palette, typography, product-fit, landing pattern, or chart selection.
-- `review`
-  Use for retrieval-backed UX, accessibility, or UI quality checks.
-- `stack-guidance`
-  Use for stack-specific frontend heuristics after the product direction is known.
+- `direction`
+  Use for style, palette, typography, product-fit, landing pattern, chart, or UX direction selection.
+- `artifact`
+  Use for durable demos, reviewable HTML artifacts, launcher updates, or stronger visual direction output.
+- `implementation`
+  Use for frontend code work after the direction is selected or while direction and code need to evolve together.
+- `motion-and-assets`
+  Use for icons, imagery, placeholders, animation role, reduced-motion, and motion implementation decisions.
+- `verification`
+  Use for UX, accessibility, responsive, and practical unit-test or behavior verification.
 
 ## Workflow
 
 1. State the real design question:
-   - product-fit direction
-   - UI review
-   - stack guidance
+   - direction
+   - artifact
+   - implementation
+   - motion and assets
+   - verification
 2. Choose the narrowest mode:
-   - `recommend`
-   - `review`
-   - `stack-guidance`
+   - `direction`
+   - `artifact`
+   - `implementation`
+   - `motion-and-assets`
+   - `verification`
 3. Run the minimum useful query against the bundled dataset instead of freehand guessing.
 4. Synthesize the retrieved result with project-local context:
    - existing tokens
    - approved screens
    - product requirements
    - platform constraints
-5. Return a compact recommendation:
+5. Decide the next concrete output:
+   - recommendation only
+   - artifact update
+   - code change
+   - motion or asset contract
+   - verification pass
+6. Execute the lightest end-to-end pass that resolves the task instead of stopping at prose if artifact or code output is the real need.
+7. Return a compact result:
+   - chosen mode
    - what fits
    - why it fits
+   - what was created or changed
    - what to avoid
-   - what the next design or implementation step should be
+   - what the next verification or implementation step should be
 
 ## Commands
 
@@ -96,10 +124,9 @@ Prefer targeted domain or stack searches first. Use `--design-system` only when 
 
 ## Pairing guidance
 
-- Pair with `ui-screen-review` when a screen-level change needs a durable artifact in a project `-ctx` repository before implementation.
-- Pair with `html-ui-art-director` when retrieved direction should turn into a reviewable HTML artifact.
-- Pair with `ui-ux-promax` after the broad direction is already accepted and the remaining job is premium refinement, hierarchy tightening, or execution polish.
-- Pair with `design-to-frontend-handoff` or `frontend-screen-implementation` only after the chosen direction is stable enough to implement.
+- Pair with `dialectical-review` first when two materially different directions are both plausible and the contradiction should be resolved before more UI work.
+- Pair with `frontend-execution-standards` only when a narrower code-quality lens is explicitly useful after this skill already owns the main UI/frontend path.
+- Use `ui-screen-review`, `html-ui-art-director`, `design-to-frontend-handoff`, or `frontend-screen-implementation` only as compatibility or specialist fallback paths when the user explicitly wants those legacy boundaries.
 
 ## Domains
 
@@ -141,13 +168,16 @@ Prefer compact outputs such as:
 - chosen mode
 - best-fit recommendation or findings
 - rationale grounded in retrieved results
+- artifacts or files created or changed when relevant
 - anti-patterns or constraints
 - whether to keep, adapt, or reject the suggested direction
-- next step for review, handoff, or implementation
+- implementation or verification note when relevant
+- next step for review, coding, or validation
 
 ## Boundaries
 
 - Do not let retrieved suggestions override an approved project direction.
 - Do not present generated design systems as canonical without review.
-- Do not use this skill as a substitute for real UI critique when the task is screen-specific and high-stakes.
+- Do not stop at recommendation prose when the real task is artifact or code ownership.
 - Do not dump raw search output without synthesis.
+- Do not turn "end-to-end" into careless overbuilding; choose the lightest output that fully resolves the task.

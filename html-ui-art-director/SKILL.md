@@ -1,11 +1,13 @@
 ---
 name: "html-ui-art-director"
-description: "Use when a UI or UX task needs a stronger HTML-first design artifact with clear art direction, modern layout judgment, icon and asset strategy, and built-in critique against generic rounded-card output. Use it when the user wants sharper visual taste, stronger UX sensitivity, and a reviewable HTML/CSS direction before production implementation."
+description: "Specialist compatibility skill for tasks that explicitly need a stronger HTML-first art-direction pass, layout defense, and asset strategy beyond the normal `ui-design-intelligence` flow. Use it when a legacy workflow or an explicitly requested specialist lane still needs authored HTML/CSS direction."
 ---
 
 # HTML UI Art Director
 
-Use this skill when the output should be a stronger HTML-first UI artifact rather than a vague visual prompt or a generic component stack.
+Specialist compatibility skill.
+
+Use this skill when the task explicitly needs a stronger HTML-first art-direction pass beyond the normal `ui-design-intelligence` flow, or when older project workflow already names this skill directly.
 
 Keep this file focused on the operating model. Load only the reference files the task needs:
 
@@ -32,6 +34,7 @@ When the task needs a concrete quality bar for HTML output, inspect the demo art
 - A reviewable design artifact should exist before frontend implementation.
 
 Do not use this skill for tiny one-off styling tweaks unless those tweaks are part of a broader surface reset.
+Do not choose this as the normal first-entry public UI skill; use `ui-design-intelligence` first unless the user explicitly wants this specialist lane.
 
 ## Goal
 
@@ -187,8 +190,8 @@ If two or more appear, revise the layout or visual language before presenting th
 
 ## Pairing guidance
 
-- Pair with `ui-design-intelligence` first when the task still needs retrieval-backed product-fit style, palette, or typography direction before art direction gets locked.
-- Pair with `ui-screen-review` when a durable review artifact must be created in a private project `-ctx` repo.
+- Pair with `ui-design-intelligence` first when the task still needs retrieval-backed product-fit style, artifact ownership, implementation, or verification.
+- Pair with `ui-screen-review` only when a legacy durable review artifact must be updated in a private project `-ctx` repo.
 - Pair with `dialectical-review` when two competing design directions are both plausible and the contradiction needs synthesis first.
 
 ## Output shape
@@ -216,3 +219,4 @@ Prefer compact outputs that contain:
 - Do not fake “premium” through blur, glow, or gradients alone.
 - Do not skip critique just because the first render looks polished.
 - Do not replace project-specific product requirements with style preference.
+- Do not present this skill as the default owner of HTML artifacts now that `ui-design-intelligence` owns the normal end-to-end path.

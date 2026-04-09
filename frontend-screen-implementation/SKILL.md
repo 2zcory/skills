@@ -1,6 +1,6 @@
 ---
 name: "frontend-screen-implementation"
-description: "Use when one approved screen or tightly scoped flow slice needs frontend implementation. Turn the handoff into concrete execution guidance or code work covering UI structure, interaction ownership, responsive behavior, and the full set of user-facing states instead of only the happy path."
+description: "Deprecated compatibility skill for legacy workflows that still name a separate screen-implementation lane after UI direction is settled. Use it only when that older split should be preserved instead of letting `ui-design-intelligence` own normal frontend implementation."
 ---
 
 # Frontend Screen Implementation
@@ -9,9 +9,8 @@ Deprecated public UI skill.
 
 Primary replacement path:
 
-1. use `ui-screen-review` to keep the approved artifact and implementation boundary explicit
-2. use `html-ui-art-director` when the artifact still needs stronger authored direction
-3. then continue as normal coding work instead of routing through a separate public UI implementation skill
+1. use `ui-design-intelligence` as the primary owner for direction, artifact, and implementation
+2. keep this skill only as a compatibility bridge when an older workflow still names a separate implementation lane
 
 Keep this skill only as a temporary compatibility bridge while the public UI surface is being simplified.
 
@@ -25,7 +24,7 @@ Use this skill when a single screen or tightly scoped flow slice is ready to be 
 
 Do not use this skill for broad frontend architecture, vague design exploration, or large multi-area refactors.
 Do not use this skill as the only routing layer when the real need is cross-cutting frontend code standards, rendering-boundary cleanup, or component-pattern discipline across multiple surfaces; pair with `frontend-execution-standards` for that.
-Do not choose this as a first-choice public UI skill when the three-core path already covers the task.
+Do not choose this as a first-choice public UI skill.
 
 ## Workflow
 

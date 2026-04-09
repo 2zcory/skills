@@ -1,6 +1,6 @@
 ---
 name: "frontend-execution-standards"
-description: "Use when frontend code work needs modern implementation standards rather than only screen-slice workflow. Apply it for React, Next.js, or web frontend tasks that need clear component boundaries, server and client split discipline, explicit loading or empty or error states, semantic HTML, accessibility, responsive behavior, performance restraint, and current best-practice execution without drifting into broad architecture review."
+description: "Deprecated compatibility skill for applying a narrower frontend code-quality lens after the main UI/frontend path is already owned elsewhere. Use it only when `ui-design-intelligence` needs an additional standards overlay for rendering, state, accessibility, responsiveness, or pattern discipline."
 ---
 
 # Frontend Execution Standards
@@ -9,8 +9,8 @@ Deprecated public UI skill.
 
 Primary replacement path:
 
-1. use the three-core UI route for review, direction, and artifact work
-2. preserve the standards here as implementation discipline during normal coding rather than as a first-choice public UI skill
+1. use `ui-design-intelligence` as the primary owner for normal UI/frontend work
+2. preserve the standards here as an optional implementation-quality overlay, not a first-choice public UI skill
 
 Keep this skill only as a temporary compatibility bridge while the public UI surface is being simplified.
 
@@ -36,8 +36,8 @@ Keep this file focused on operating rules. Load only the references needed for t
 
 Do not use this skill for product requirements clarification, screen-review workflow, pure art direction, or broad architecture decisions that should route to a different skill.
 Do not use it as the entry point for shared headers, nav shells, or combined brand plus locale plus theme surfaces that still need hierarchy review.
-Do not treat this skill as the owner of a single approved screen slice when the main question is simply "implement this screen well"; in that case use `frontend-screen-implementation` as the primary skill and pair this one only when code-quality discipline needs to stay explicit.
-Do not choose this as a first-choice public UI skill when the three-core path already covers the task.
+Do not treat this skill as the owner of a single approved screen slice when the main question is simply "implement this screen well"; in that case let `ui-design-intelligence` own the main path and use this skill only if a narrower standards lens is truly needed.
+Do not choose this as a first-choice public UI skill.
 
 ## Goal
 
@@ -77,7 +77,7 @@ Produce frontend code that is current, maintainable, and disciplined:
    - locale controls
    - theme controls
    - cross-route responsive compression
-   - if it owns two or more of those, stop and route through `ui-screen-review` or an approved system-surface contract before code-first implementation
+  - if it owns two or more of those, stop and route through `ui-design-intelligence` or an approved system-surface contract before code-first implementation
 5. Make the ownership boundary explicit:
    - what belongs in the page or route
    - what belongs in child components
@@ -146,14 +146,13 @@ If that pressure is real, load `references/pattern-selection.md` and choose the 
 - Avoid decorative motion without a state or orientation job.
 - Prefer the lightest named pattern that resolves the actual problem; do not add patterns for status signaling or résumé theater.
 - Do not treat `npm run build`, CSS edits, or inferred breakpoint logic as sufficient evidence that a user-facing responsive pass is complete.
-- If the slice owns two or more of brand, primary nav, locale, theme, or cross-route responsive compression, do not proceed code-first without a reviewed system-surface artifact or approved contract.
+- If the slice owns two or more of brand, primary nav, locale, theme, or cross-route responsive compression, do not proceed code-first without a reviewed system-surface artifact or approved contract owned by `ui-design-intelligence` or an explicit legacy equivalent.
 
 ## Pairing Guidance
 
-- Pair with `frontend-screen-implementation` when the task is one approved screen or flow slice and both workflow structure and code standards matter.
-- When both skills apply, let `frontend-screen-implementation` own the screen slice and let this skill act as the standards overlay for rendering, a11y, state, and responsive verification discipline.
-- Pair with `ui-screen-review` first when the work touches shared public chrome or another `system surface`.
-- Pair with `ui-ux-promax` when the implementation is correct but the visual execution still feels generic or weak.
+- Let `ui-design-intelligence` own the main path and use this skill only as a standards overlay for rendering, a11y, state, and responsive verification discipline.
+- Pair with `ui-screen-review` only when the work must preserve a legacy `demos/screens/` review workflow.
+- Pair with `ui-ux-promax` only as a compatibility refinement lane when explicitly requested.
 - Pair with `web-architecture-review` when the real question is rendering or repository architecture rather than code-level implementation quality.
 
 ## Output Shape

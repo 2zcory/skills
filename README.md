@@ -10,7 +10,7 @@ Public Codex skills and reusable agent workflows.
 
 ## Current Skills
 
-- `adaptive-roadmap`: create or review phased project roadmaps as living execution artifacts with explicit assumptions, decision boundaries, replan triggers, and defer-not-yet guidance
+- `adaptive-roadmap`: compatibility roadmap skill for older or deliberately narrow roadmap-only passes; prefer `project-planning` for new planning work
 - `frontend-studio`: own frontend work end to end, from retrieval-backed design direction through artifact creation, implementation, motion and asset choices, and practical verification
 - `product-ba`: clarify business problems, gather requirements, frame stakeholders and domain context, and write structured specs before implementation
 - `dialectical-review`: expose contradictions, compare competing positions or hypotheses, and synthesize a stronger direction with explicit residual risk
@@ -21,7 +21,9 @@ Public Codex skills and reusable agent workflows.
 - `web-security-baseline`: review common web-app risk surfaces such as auth, sessions, permissions, inputs, uploads, secrets, and abuse controls before build or release
 - `api-contract-workflow`: turn frontend-backend boundaries into explicit contracts covering payloads, errors, pagination, auth expectations, and client-state implications
 - `algorithmic-problem-solving`: solve algorithm and data-structure tasks with paradigm selection, data-structure choice, complexity analysis, correctness reasoning, and implementation guidance
-- `editorial-voice-shaping`: diagnose route-job mismatch, identify AI-like or over-explanatory copy pathologies, and rewrite public-facing website copy so it reads more naturally without losing authored voice or route fit
+- `editorial-voice-shaping`: compatibility rewrite skill for older or deliberately narrow rewrite-only passes; prefer `content-architecture` for new voice and editorial work
+- `content-architecture`: primary content skill for deciding and improving what a page, route, project, or content system should say and how it should sound, including route priority, information architecture, voice systems, editorial rewriting, line editing, sidebars, rails, and content models
+- `project-planning`: primary planning skill for complete project plans, phased roadmaps, roadmap reviews, replans, workstreams, outcomes, anti-goals, sequencing logic, risks, replan triggers, and explicit deferrals
 
 ## Frontend Core
 

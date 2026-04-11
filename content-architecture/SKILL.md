@@ -102,6 +102,7 @@ Pick the dominant mode explicitly:
    - If the next step is UI, translate the package into layout guidance.
    - If the next step is implementation, translate it into route map, schema, or component-content requirements.
    - If the next step is writing, provide the actual draft outline or rewritten copy, not just abstract advice.
+   - If the architecture is clear but execution could still stall at "what should the page actually say first?", include a `Draft bridge` with concrete opening lines, section prompts, or route-language moves that make the next drafting pass easier to start.
 
 ## Default output shape
 
@@ -115,6 +116,7 @@ When this skill runs well, produce a compact package with the blocks that matter
 - `Section / Route blueprint`
 - `Voice system`
 - `Rewrite draft` or `Edited copy` when rewrite is in scope
+- `Draft bridge` when the architecture is accepted but the next drafting move still needs a sharper starting point
 - `Content model` when recurring objects matter
 - `Cuts / Moves`
 - `Residual risks`
@@ -143,6 +145,23 @@ When voice matters, keep it concrete:
 
 Do not write vague brand-strategy theater such as `authentic yet bold and human-centered` unless it becomes operational language a writer can use immediately.
 
+## Draft bridge format
+
+Use a `Draft bridge` when:
+
+- the architecture package is strong enough to guide the route
+- the page still needs a concrete first-pass wording bridge
+- the likely next miss is not strategy, but weak translation from structure into public-facing language
+
+Keep it short and executable:
+
+- `Opening line`: one candidate sentence or short pair that establishes the page job
+- `Proof line`: the next line, object, or cue that should earn trust quickly
+- `Route cue`: the preferred next click or reading path in visitor language
+- `Live-return cue`: one line or prompt that preserves freshness or return value when that matters
+
+Do not turn the draft bridge into a full polished rewrite unless rewrite mode is actually in scope.
+
 ## Rewrite guidance
 
 When rewriting or editing:
@@ -170,6 +189,7 @@ Name only the fields that actually matter for the product's content behavior.
 - If the page needs many cards to explain itself, the architecture is probably weak.
 - If the user cannot name the preferred next click, the route system is weak.
 - If the page explains the map before creating desire or trust, the opening is weak.
+- If the architecture package cannot produce a plausible opening line or proof line, it is still too abstract to hand off cleanly.
 - If the same sentence could appear in three sections, cut or merge.
 - If routes overlap semantically, the information architecture is weak even if each page looks good on its own.
 - If the voice rules cannot tell a writer what to do differently on the next sentence, they are too abstract.
@@ -204,6 +224,7 @@ Name only the fields that actually matter for the product's content behavior.
 For compact default blueprints and recurring section patterns, read [references/page-archetypes.md](references/page-archetypes.md).
 For route systems, object modeling, and voice-system defaults, read [references/system-patterns.md](references/system-patterns.md).
 For diagnosis prompts, failure-mode vocabulary, and rewrite patterns, read [references/diagnostics.md](references/diagnostics.md) when needed.
+For short architecture-to-draft translation patterns, read [references/draft-bridges.md](references/draft-bridges.md) when the structure is clear but the wording bridge is still weak.
 
 ## Working style
 

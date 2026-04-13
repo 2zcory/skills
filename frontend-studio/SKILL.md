@@ -69,7 +69,7 @@ Do not override an approved design system or project constraint, but do not arti
 - `implementation`
   Use for frontend code work after the direction is selected or while direction and code need to evolve together.
 - `motion-and-assets`
-  Use for icons, imagery, placeholders, animation role, reduced-motion, and motion implementation decisions.
+  Use for icon role, image role, placeholder strategy, animation role, reduced-motion, and motion implementation decisions.
 - `verification`
   Use for UX, accessibility, responsive, and practical unit-test or behavior verification.
 
@@ -97,14 +97,18 @@ Do not override an approved design system or project constraint, but do not arti
    - decide what is primary, what belongs in the main working region, and what should become a quieter support region
    - let urgent content rise near the top only when it genuinely changes the operator's next action
    - make mobile ordering follow task priority instead of desktop inheritance
-6. Decide the next concrete output:
+6. If the task involves icons, imagery, or placeholders, make the asset decision explicit before adding or changing assets:
+   - what role the asset serves: status, wayfinding, proof, orientation, tone, or none
+   - whether omission is stronger than a weak or generic asset
+   - whether the asset's content meaning is understood and defensible for this screen
+7. Decide the next concrete output:
    - recommendation only
    - artifact update
    - code change
    - motion or asset contract
    - verification pass
-7. Execute the lightest end-to-end pass that resolves the task instead of stopping at prose if artifact or code output is the real need.
-8. Return a compact result:
+8. Execute the lightest end-to-end pass that resolves the task instead of stopping at prose if artifact or code output is the real need.
+9. Return a compact result:
    - chosen mode
    - what fits
    - why it fits

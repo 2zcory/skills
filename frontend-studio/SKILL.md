@@ -52,6 +52,12 @@ When a surface feels equally loud, crowded, or accidentally dense, restore struc
 - increase spacing between groups more than spacing inside groups
 - compress mobile by task priority rather than by inherited desktop order
 
+When using imagery, prefer meaning control over image convenience:
+
+- use an image only when its content meaning is understood and defensible for the screen's job
+- prefer omission to weak, generic, or only atmospherically relevant images
+- do not treat a visually convenient reference as proof unless it actually reduces uncertainty about the product or the next user action
+
 Do not override an approved design system or project constraint, but do not artificially split the job across several UI skills when one coherent pass would be better.
 
 ## Modes

@@ -45,6 +45,13 @@ The correct operating model is:
 - implement the direction cleanly
 - verify the user-facing result proportionally
 
+When a surface feels equally loud, crowded, or accidentally dense, restore structure before adding visual polish:
+
+- separate primary, main, and support regions
+- allow a bounded near-primary alert band only when urgency is real
+- increase spacing between groups more than spacing inside groups
+- compress mobile by task priority rather than by inherited desktop order
+
 Do not override an approved design system or project constraint, but do not artificially split the job across several UI skills when one coherent pass would be better.
 
 ## Modes
@@ -80,14 +87,18 @@ Do not override an approved design system or project constraint, but do not arti
    - approved screens
    - product requirements
    - platform constraints
-5. Decide the next concrete output:
+5. If the surface feels crowded, equally weighted, or generic, fix the structure before styling it:
+   - decide what is primary, what belongs in the main working region, and what should become a quieter support region
+   - let urgent content rise near the top only when it genuinely changes the operator's next action
+   - make mobile ordering follow task priority instead of desktop inheritance
+6. Decide the next concrete output:
    - recommendation only
    - artifact update
    - code change
    - motion or asset contract
    - verification pass
-6. Execute the lightest end-to-end pass that resolves the task instead of stopping at prose if artifact or code output is the real need.
-7. Return a compact result:
+7. Execute the lightest end-to-end pass that resolves the task instead of stopping at prose if artifact or code output is the real need.
+8. Return a compact result:
    - chosen mode
    - what fits
    - why it fits

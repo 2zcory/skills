@@ -181,6 +181,15 @@ Prefer targeted domain or stack searches first. Use `--design-system` only when 
 - `angular`
 - `laravel`
 
+## Implementation Tips
+
+- **Sidepanels & Constrained UI:** Every pixel counts. Prefer `rounded-2xl` over massive radii to maximize usable content area. Tighten `gap` and `padding` incrementally until focus is purely on the primary content cards.
+- **Smart Motion:** 
+  - Use **Overflow-aware Marquees**: Only trigger title scrolling when the text actually overflows its container using `useRef` measurements.
+  - Use **Adaptive Durations**: Calculate marquee duration based on text length (`duration = length / speed`) to maintain constant reading speed.
+- **React-driven Indicators:** For sliding tabs or nav menus that need to "travel," prefer React `ref` measurements and dynamic `left`/`width` styles over pure CSS `:has()` or static selectors for 100% reliability in Extension environments.
+- **Invisible Scrolling:** For horizontal icon ribbons, hide scrollbars and implement wheel-to-horizontal scrolling (`onWheel` event) for a premium feel.
+
 ## Output shape
 
 Prefer compact outputs such as:
@@ -200,4 +209,4 @@ Prefer compact outputs such as:
 - Do not present generated design systems as canonical without review.
 - Do not stop at recommendation prose when the real task is artifact or code ownership.
 - Do not dump raw search output without synthesis.
-- Do not turn "end-to-end" into careless overbuilding; choose the lightest output that fully resolves the task.
+- Do not turn \"end-to-end\" into careless overbuilding; choose the lightest output that fully resolves the task.

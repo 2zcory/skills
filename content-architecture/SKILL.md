@@ -1,11 +1,13 @@
 ---
 name: "content-architecture"
-description: "Use when the task is about deciding or improving what a project, website, app, page, route, or content system should say, in what order, and how it should sound. This is the primary content skill and subsumes editorial voice shaping: it handles audience and job framing, route priority, narrative hierarchy, section responsibilities, information architecture, content models, brand voice systems, editorial rewriting, and line-level copy shaping, then turns raw material into architecture packages, rewrite drafts, or implementation-ready content blueprints."
+description: "Use when the task is about deciding or improving what a project, website, app, page, route, or content system should say, in what order, and how it should sound. This is the primary content skill and subsumes editorial voice shaping: it handles audience and job framing, route priority, narrative hierarchy, section responsibilities, information architecture, content models, brand voice systems, editorial rewriting, and line-level copy shaping, then turns raw material into architecture packages, rewrite drafts, or implementation-ready content blueprints. Do not use this as the primary surface for formal software-project requirements, design, or delivery-document systems; use `software-docs-system` for that and route here only for content-structure or voice-specific slices."
 ---
 
 # Content Architecture
 
 Use this skill when the real problem is not just styling, but deciding what the product or page should say, in what order, with what hierarchy, and in what voice.
+
+If the user is asking for formal project documentation across business requirements, specs, design, and delivery handoff, use `software-docs-system` first and only route here for the narrower content-architecture or editorial slice.
 
 This skill is the primary content surface. It owns content architecture, route-level messaging, editorial voice shaping, public-facing rewriting, and copyediting when those tasks depend on route fit or system coherence. Do not split between `content-architecture` and `editorial-voice-shaping`; treat voice and rewrite work as modes inside this skill.
 

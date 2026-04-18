@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Docs System"
+  short_description: "Build and route coherent software project docs across requirements, design, and delivery"
+  default_prompt: "Use $software-docs-system to choose the minimum coherent document pack for this software project, draft or tighten the required artifacts across business, requirements, design, and delivery handoff, preserve traceability, and map the outputs into the right repo surfaces and execution units."

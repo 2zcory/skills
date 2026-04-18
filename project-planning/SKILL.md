@@ -1,6 +1,6 @@
 ---
 name: "project-planning"
-description: "Use when the user wants a complete project plan, delivery plan, phased roadmap, sequencing plan, roadmap review, or replan for a project. This is the primary planning skill and subsumes adaptive roadmap work: it handles planning questions, current phase or active workstreams, facts versus assumptions, desired outcomes, anti-goals, sequencing, dependencies, evidence quality, decision boundaries, invalidation checks, replan triggers, and what not to build yet, then produces a review-ready plan strong enough to guide execution."
+description: "Use when the user wants a complete project plan, delivery plan, phased roadmap, sequencing plan, roadmap review, or replan for a project. This is the primary planning skill and subsumes adaptive roadmap work: it handles planning questions, current phase or active workstreams, facts versus assumptions, desired outcomes, anti-goals, sequencing, dependencies, evidence quality, decision boundaries, invalidation checks, replan triggers, and what not to build yet, then produces a review-ready plan strong enough to guide execution. Do not use this as the primary surface for a full software-project documentation system across requirements, design, and delivery handoff; use `software-docs-system` for that and route here when the real need is a governing plan."
 ---
 
 # Project Planning
@@ -8,6 +8,8 @@ description: "Use when the user wants a complete project plan, delivery plan, ph
 Use this skill when the user needs a planning artifact that can govern a project, not just describe hopeful work.
 
 This skill is the primary planning surface. It owns full project plans, roadmap creation, roadmap review, and replanning. Do not split between `project-planning` and `adaptive-roadmap`; treat roadmap work as one mode inside this skill.
+
+If the user is asking for a coherent software-project doc pack, use `software-docs-system` as the primary surface and route here only when the main need has become sequencing, workstreams, milestones, or replan governance.
 
 ## Use this skill when
 

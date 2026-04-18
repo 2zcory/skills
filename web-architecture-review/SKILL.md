@@ -1,11 +1,13 @@
 ---
 name: "web-architecture-review"
-description: "Use when a web application needs an architecture decision or review before implementation continues. Clarify constraints first, compare rendering, state, API, repository, and deployment boundary options, identify the strongest practical direction, and leave behind a concise recommendation with explicit tradeoffs and residual risks."
+description: "Use when a web application needs an architecture decision or review before implementation continues. Clarify constraints first, compare rendering, state, API, repository, and deployment boundary options, identify the strongest practical direction, and leave behind a concise recommendation with explicit tradeoffs and residual risks. Do not use this as the primary surface for a full software-project documentation system across requirements, design, and delivery handoff; use `software-docs-system` for that and route here only for the architecture-decision slice."
 ---
 
 # Web Architecture Review
 
 Use this skill when a web application needs architecture thinking before implementation or refactoring continues.
+
+If the user is asking for a full project doc pack or a coherent documentation system, use `software-docs-system` first and only route here for the narrower architecture-review or architecture-design slice.
 
 ## Use this skill when
 

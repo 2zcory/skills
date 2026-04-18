@@ -35,6 +35,7 @@ The public frontend path is now intentionally simple:
 In short:
 
 - `frontend-studio` answers "what direction fits, what artifact should exist, what code should be written, and how should the result be verified?"
+- the private repo `ui-ux-lab` sits behind this path as a training and validation loop for improving `frontend-studio`, not as a normal step in project delivery
 
 Removed from the public repo:
 

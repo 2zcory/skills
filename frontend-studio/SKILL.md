@@ -17,6 +17,8 @@ This skill is now the normal first-entry owner for UI and frontend work. Retriev
 
 Load the bundled search engine only when needed. Do not dump raw catalog output into the user response when a short synthesis is enough.
 
+`frontend-studio` is the real-task owner, not the training lab. When repeated work exposes a reusable weakness, recurring failure shape, or a lesson that needs benchmark pressure before it becomes durable guidance, route that improvement work into the private `ui-ux-lab` loop instead of bloating this skill's normal task flow.
+
 ## Use this skill when
 
 - The user asks what visual direction fits a product, audience, or industry.
@@ -115,6 +117,14 @@ Do not override an approved design system or project constraint, but do not arti
    - what was created or changed
    - what to avoid
    - what the next verification or implementation step should be
+
+## Relation To UI UX Lab
+
+- Use `frontend-studio` for real project work: direction, artifact, implementation, assets, and verification.
+- Use `ui-ux-lab` only for skill-improvement work behind the production path.
+- Open `ui-ux-lab` when a lesson needs repeated validation, a benchmark, or a named anti-pattern before it should influence production guidance.
+- Do not route routine product delivery into `ui-ux-lab`.
+- Do not turn `frontend-studio` itself into a warehouse of half-proven lessons.
 
 ## Commands
 

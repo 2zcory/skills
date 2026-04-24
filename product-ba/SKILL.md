@@ -1,6 +1,6 @@
 ---
 name: "product-ba"
-description: "Use when a task is heading toward design or implementation but the business problem, scope, stakeholders, workflow, or requirements are still unclear. Clarify the business goal, actors, constraints, business rules, and success measures first, using focused BA questioning when needed, then produce the lightest fitting BA artifact such as a clarification note, requirement summary, user-story pack, or mini-BRD. Do not use this as the primary surface for a full software-project documentation system across requirements, design, and delivery handoff; use `software-docs-system` for that."
+description: "Use when work is heading toward design or implementation but the business goal, scope, actors, workflow, or requirements are still unclear. Clarify the problem first; use `software-docs-system` for broader project docs."
 ---
 
 # Product BA

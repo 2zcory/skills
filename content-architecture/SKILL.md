@@ -1,6 +1,6 @@
 ---
 name: "content-architecture"
-description: "Use when the task is about deciding or improving what a project, website, app, page, route, or content system should say, in what order, and how it should sound. This is the primary content skill and subsumes editorial voice shaping: it handles audience and job framing, route priority, narrative hierarchy, section responsibilities, information architecture, content models, brand voice systems, editorial rewriting, and line-level copy shaping, then turns raw material into architecture packages, rewrite drafts, or implementation-ready content blueprints. Do not use this as the primary surface for formal software-project requirements, design, or delivery-document systems; use `software-docs-system` for that and route here only for content-structure or voice-specific slices."
+description: "Primary content skill for deciding what a page, route, or product should say, in what order, and in what voice. Use it for content structure and editorial shaping; use `software-docs-system` for broader project docs."
 ---
 
 # Content Architecture

@@ -1,6 +1,6 @@
 ---
 name: "web-testing-strategy"
-description: "Use when a web application needs a pragmatic testing strategy instead of ad hoc verification. Map the actual product risks and change scope to an appropriate mix of unit, integration, end-to-end, smoke, visual, and release checks, and make the tradeoffs explicit instead of defaulting to blanket coverage."
+description: "Use when a web app needs a pragmatic testing strategy. Map real risks and change scope to the lightest mix of unit, integration, end-to-end, visual, smoke, and manual checks."
 ---
 
 # Web Testing Strategy

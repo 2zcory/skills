@@ -1,6 +1,6 @@
 ---
 name: "algorithmic-problem-solving"
-description: "Use when a task needs strong algorithm and data-structure reasoning: solving coding interview problems, competitive-programming style tasks, optimizing an implementation, choosing the right data structure, reducing time or space complexity, proving correctness, or handling edge cases before coding. Apply it when brute force may be too slow, the right paradigm is unclear, or the implementation needs disciplined complexity-aware design."
+description: "Use for algorithm and data-structure work: solving problems, selecting paradigms, improving complexity, proving correctness, or fixing edge-case-heavy implementations where algorithmic reasoning is the main bottleneck."
 ---
 
 # Algorithmic Problem Solving

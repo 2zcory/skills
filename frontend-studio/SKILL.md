@@ -1,6 +1,6 @@
 ---
 name: "frontend-studio"
-description: "Use when a frontend task needs one primary owner from design direction through artifact generation, coding, motion and asset decisions, and practical verification. Helpful for choosing product-fit styles, building durable demos or artifacts, implementing HTML/CSS/JS or framework code, and applying retrieval-backed design judgment without collapsing into generic output."
+description: "Primary frontend skill for owning UI work end to end: design direction, artifacts, implementation, motion or asset choices, and practical verification without falling into generic output."
 ---
 
 # Frontend Studio

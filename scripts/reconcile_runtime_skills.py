@@ -38,6 +38,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Replace existing runtime entries even when they are not symlinks.",
     )
+    parser.add_argument(
+        "--prune",
+        action="store_true",
+        help="Remove runtime symlinks or junctions that no longer map to authored skills in this repo.",
+    )
     return parser.parse_args()
 
 
@@ -51,6 +56,15 @@ def authored_skills(repo_root: Path) -> list[Path]:
         if (child / "SKILL.md").is_file():
             skills.append(child)
     return skills
+
+
+def runtime_entries(runtime_root: Path) -> list[Path]:
+    entries: list[Path] = []
+    for child in sorted(runtime_root.iterdir()):
+        if child.name.startswith("."):
+            continue
+        entries.append(child)
+    return entries
 
 
 def ensure_runtime_link(skill_dir: Path, runtime_root: Path, dry_run: bool, force: bool) -> str:
@@ -82,6 +96,20 @@ def ensure_runtime_link(skill_dir: Path, runtime_root: Path, dry_run: bool, forc
     return f"create  {runtime_entry} -> {target}"
 
 
+def prune_runtime_entry(
+    runtime_entry: Path,
+    authored_skill_names: set[str],
+    dry_run: bool,
+) -> str | None:
+    if runtime_entry.name in authored_skill_names:
+        return None
+    if not runtime_entry.is_symlink():
+        return f"keep    {runtime_entry} is not a symlink/junction"
+    if not dry_run:
+        runtime_entry.unlink()
+    return f"prune   {runtime_entry}"
+
+
 def main() -> int:
     args = parse_args()
     repo_root = Path(args.repo_root).expanduser().resolve()
@@ -98,6 +126,7 @@ def main() -> int:
     if not skills:
         print(f"no authored skills found under {repo_root}")
         return 0
+    authored_skill_names = {skill.name for skill in skills}
 
     print(f"repo root:    {repo_root}")
     print(f"runtime root: {runtime_root}")
@@ -105,6 +134,12 @@ def main() -> int:
 
     for skill in skills:
         print(ensure_runtime_link(skill, runtime_root, args.dry_run, args.force))
+
+    if args.prune:
+        for entry in runtime_entries(runtime_root):
+            result = prune_runtime_entry(entry, authored_skill_names, args.dry_run)
+            if result:
+                print(result)
 
     return 0
 

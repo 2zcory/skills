@@ -1,6 +1,6 @@
 ---
 name: "api-contract-workflow"
-description: "Use when a frontend-backend boundary needs an explicit API contract before implementation or integration continues. Clarify request and response shape, error behavior, pagination, filtering, auth expectations, and client-state assumptions, then leave behind a concise contract with open questions and ownership boundaries. Do not use this as the primary surface for a full software-project documentation system; use `software-docs-system` for the broader doc pack and route here only for the API-boundary slice."
+description: "Use when a frontend-backend boundary needs an explicit API contract. Define requests, responses, errors, pagination, and auth expectations; use `software-docs-system` when the task needs broader project docs."
 ---
 
 # API Contract Workflow

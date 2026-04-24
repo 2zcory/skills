@@ -1,6 +1,6 @@
 ---
 name: "web-release-ops"
-description: "Use when a web application needs release-readiness or operational workflow help before deployment. Turn pending release work into an explicit plan covering environments, migrations, feature flags, smoke checks, rollback, and post-release verification without drifting into platform-specific infrastructure detail unless the task requires it."
+description: "Use when a web app needs release-readiness or operational workflow help before deployment, including environments, migrations, smoke checks, rollback, and post-release verification."
 ---
 
 # Web Release Ops

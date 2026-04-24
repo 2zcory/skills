@@ -1,6 +1,6 @@
 ---
 name: "project-planning"
-description: "Use when the user wants a complete project plan, delivery plan, phased roadmap, sequencing plan, roadmap review, or replan for a project. This is the primary planning skill and subsumes adaptive roadmap work: it handles planning questions, current phase or active workstreams, facts versus assumptions, desired outcomes, anti-goals, sequencing, dependencies, evidence quality, decision boundaries, invalidation checks, replan triggers, and what not to build yet, then produces a review-ready plan strong enough to guide execution. Do not use this as the primary surface for a full software-project documentation system across requirements, design, and delivery handoff; use `software-docs-system` for that and route here when the real need is a governing plan."
+description: "Primary planning skill for project plans, phased roadmaps, sequencing, review, and replanning. Use it when the output must govern execution; use `software-docs-system` when the main need is broader project docs."
 ---
 
 # Project Planning

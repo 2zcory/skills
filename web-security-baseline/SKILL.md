@@ -1,6 +1,6 @@
 ---
 name: "web-security-baseline"
-description: "Use when a web application needs a practical security baseline review before implementation or release continues. Surface the real risk boundaries around auth, sessions, permissions, inputs, uploads, secrets, abuse controls, and auditability, then turn them into a concise baseline with explicit gaps and follow-up checks."
+description: "Use when a web app needs a practical security baseline before implementation or release, covering auth, sessions, permissions, inputs, uploads, secrets, abuse controls, and explicit follow-up gaps."
 ---
 
 # Web Security Baseline

@@ -1,6 +1,6 @@
 ---
 name: "dialectical-review"
-description: "Use when a task, proposal, workflow, design, or debugging path has a real contradiction, materially competing options, or weakly ranked hypotheses and needs a disciplined synthesis pass. Surface hidden assumptions, compare the strongest alternatives fairly, test them against evidence and workflow reality, and converge on a practical direction with explicit residual risks."
+description: "Use when a task or proposal has a real contradiction, competing options, or weakly ranked hypotheses and needs a disciplined synthesis that tests assumptions and converges on a practical direction."
 ---
 
 # Dialectical Review

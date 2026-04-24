@@ -1,6 +1,6 @@
 ---
 name: "editorial-voice-shaping"
-description: "Compatibility rewrite skill for narrower public-copy rewriting. Prefer `content-architecture` for route-level messaging, voice systems, editorial rewriting, and line editing. Use this skill only when a legacy workflow explicitly requests it and the user wants a narrow rewrite-only pass without the broader content-architecture frame."
+description: "Compatibility skill for narrow public-copy rewrites. Prefer `content-architecture` for route-level messaging, voice systems, or structural editing; use this only for explicitly rewrite-only or legacy workflows."
 ---
 
 # Editorial Voice Shaping

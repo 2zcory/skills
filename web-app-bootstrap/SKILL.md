@@ -1,6 +1,6 @@
 ---
 name: "web-app-bootstrap"
-description: "Use when a user is starting or refreshing a web application project and needs a private `-ctx` repository bootstrapped from the shared Context OS template or starter kit. Identify the source repo and matching private context repo first, reuse the existing web-app template assets when available, set up only the necessary context surfaces, create the first story, and keep bootstrap work thin instead of inventing a parallel process."
+description: "Use when a web app needs a new or refreshed private `-ctx` repository. Bootstrap the context surfaces thinly from the shared template, identify the source and context repos first, and avoid inventing a parallel process."
 ---
 
 # Web App Bootstrap

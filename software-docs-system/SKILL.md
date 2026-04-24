@@ -1,6 +1,6 @@
 ---
 name: "software-docs-system"
-description: "Use when a software project needs a coherent documentation system across business requirements, functional and system specifications, design, and delivery handoff. This skill integrates deeply with Context OS, utilizing the three-surface model (Source, -ctx, Knowledge) and AI-native workflows like story-capture and ADRs."
+description: "Use when a software project needs a coherent documentation system across requirements, specs, design, and delivery handoff, with Context OS three-surface mapping, story capture, and ADR-friendly workflow."
 ---
 
 # Software Docs System

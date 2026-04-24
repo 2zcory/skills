@@ -1,6 +1,6 @@
 ---
 name: "web-architecture-review"
-description: "Use when a web application needs an architecture decision or review before implementation continues. Clarify constraints first, compare rendering, state, API, repository, and deployment boundary options, identify the strongest practical direction, and leave behind a concise recommendation with explicit tradeoffs and residual risks. Do not use this as the primary surface for a full software-project documentation system across requirements, design, and delivery handoff; use `software-docs-system` for that and route here only for the architecture-decision slice."
+description: "Use when a web app needs an architecture decision before implementation continues. Compare rendering, state, API, repo, and deployment boundaries; use `software-docs-system` when the task needs broader project docs."
 ---
 
 # Web Architecture Review

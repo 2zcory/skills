@@ -1,6 +1,6 @@
 ---
 name: adaptive-roadmap
-description: Compatibility roadmap skill for narrower roadmap-only work. Prefer `project-planning` for new roadmap creation, roadmap review, replanning, and full project plans. Use this skill only when a legacy workflow or a deliberately narrow roadmap-only pass is explicitly requested and the user does not want the broader project-planning frame.
+description: Compatibility skill for narrow roadmap-only passes. Prefer `project-planning` for new roadmap creation, review, or replanning; use this only when a legacy workflow or explicitly narrow request requires it.
 ---
 
 # Adaptive Roadmap

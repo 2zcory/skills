@@ -53,6 +53,8 @@ When a surface feels equally loud, crowded, or accidentally dense, restore struc
 - allow a bounded near-primary alert band only when urgency is real
 - increase spacing between groups more than spacing inside groups
 - compress mobile by task priority rather than by inherited desktop order
+- treat `do not break layout` as a hard guardrail: preserve layout integrity first, then polish density or styling
+- verify obvious break-risk surfaces before close-out: overflow, wrapping, sticky regions, hero budget, sidebar behavior, and narrow-width readability
 
 For compact UI, never compress density mechanically just because the surface is small:
 

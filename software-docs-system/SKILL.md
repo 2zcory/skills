@@ -46,6 +46,7 @@ Use this skill when the user wants durable project documentation that serves bot
 - **ADRs**: Create an ADR whenever a non-trivial technical choice is made (e.g., choosing a library, changing a layout pattern).
 - **README Alignment**: Keep the source README focused on "What/How to run" and point to `-ctx` or `knowledge` for "Why/Future."
 - **Story Slicing**: Ensure user stories are small enough to be "shipped" in one or two sessions.
+- **Filename Signals**: When a project already uses stable reference codes such as `SCR.*`, `FN.*`, or similar capability identifiers, include the primary relevant code in new durable document filenames when practical so retrieval and cross-session linking stay fast and consistent.
 
 ## References
 

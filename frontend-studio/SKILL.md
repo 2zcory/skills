@@ -54,6 +54,13 @@ When a surface feels equally loud, crowded, or accidentally dense, restore struc
 - increase spacing between groups more than spacing inside groups
 - compress mobile by task priority rather than by inherited desktop order
 
+For compact UI, never compress density mechanically just because the surface is small:
+
+- every visible token must still self-explain its role without relying on a tooltip
+- the primary row belongs to the primary content, not to support metadata unless that metadata is the actual task cue
+- hover-only or hidden controls must not permanently reserve layout space
+- saved space is not a win if it reappears as ambiguity, duplication, or dead space elsewhere
+
 When using imagery, prefer meaning control over image convenience:
 
 - use an image only when its content meaning is understood and defensible for the screen's job
@@ -110,7 +117,11 @@ Do not override an approved design system or project constraint, but do not arti
    - motion or asset contract
    - verification pass
 8. Execute the lightest end-to-end pass that resolves the task instead of stopping at prose if artifact or code output is the real need.
-9. Return a compact result:
+9. Before close-out on an existing UI, run a short adversarial self-review:
+   - what the eye lands on first
+   - what each badge, chip, or control communicates without tooltip
+   - whether any compacting move displaced ambiguity or dead space instead of removing it
+10. Return a compact result:
    - chosen mode
    - what fits
    - why it fits
